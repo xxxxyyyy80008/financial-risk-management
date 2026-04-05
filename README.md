@@ -4,8 +4,8 @@
 Study notes on Financial Risk Management by Professor Carol Alexander. 
 
 ## Table of Contents
-1. [Introduction to Financial Risk Management](#topic-1-introduction-to-financial-risk-management)
-2. [Credit Risk Management](#topic-2-credit-risk-management)
+1. [Introduction to Financial Risk Management](notes/topic1_intro.md)
+2. [Credit Risk Management](notes/topic2_credit.md%20)
 3. [Portfolio Returns and their Distributions](#topic-3-portfolios-returns-and-their-distributions)
 4. [Volatility and Value-at-Risk](#topic-4-volatility-and-value-at-risk)
 5. [Fixed Income Portfolios](#topic-5-fixed-income-portfolios)
