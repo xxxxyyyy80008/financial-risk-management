@@ -440,7 +440,8 @@ Find the net position gamma for two options on the same underlying:
 - Option 1 is a long call on 80 shares with a gamma of 0.1,  
 - Option 2 is a short put on 50 shares with a gamma of 0.02.
 
-## Solution:
+**Solution:**
+
 - Option 1 has position gamma $0.1 \times 80 = 8$  
 - Option 2 has position gamma $-0.02 \times 50 = -1$  
 - Hence the net position gamma is $8 - 1 = 7$
