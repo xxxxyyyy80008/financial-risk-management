@@ -12,8 +12,7 @@ Study notes on Financial Risk Management by Professor Carol Alexander.
 6. [International Equity and Commodity Portfolios](notes/topic6_equity.md)
 7. [Risk Management for Options Portfolios](notes/topic7_options.md)
 8. [Capital Reserves for Market Risk](notes/topic8_capital.md)
-
-## Math Foundations
+9. [Math Foundations](notes/math_basic.md)
 
 
 

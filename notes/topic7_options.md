@@ -214,23 +214,6 @@ $$\Phi(d_2) = \text{NORMSDIST}(-0.49545) = 0.31014$$
 - The vega is the 1st partial derivative of $f(S_t, \sigma)$ with respect to $\sigma$
 
 
-**# Partial Derivatives Example**
-
-$$f(x, y) = x^2y + 2xy^3$$
-
-Partial derivative with respect to $x$:
-
-$$f_x(x, y) = \frac{\partial}{\partial x} \left( x^2y + 2xy^3 \right)$$
-
-$$= 2xy + 2y^3$$
-
-Partial derivative with respect to $y$:
-
-$$f_y(x, y) = \frac{\partial}{\partial y} \left( x^2y + 2xy^3 \right)$$
-
-$$= x^2 + 6xy^2$$
-
-
 
 **BS Delta (δ), Gamma (γ) and Vega (ν)**
 
