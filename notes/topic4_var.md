@@ -430,4 +430,4 @@ $$\text{VaR}_{10,0.01} = 2.326348 \times 0.015 \times \sqrt{10} = 11.0348\%$$
 
 **Solution to (b):**
 We calculate $\tilde{h} = 15.778$. So the 10-day VaR is
-$$\text{VaR}_{10,0.01} = 2.326348 \times 0.015 \times \sqrt{15.778} = 13.8608\%$$
+$$\text{VaR}_{10,0.01} = 2.326348 \times 0.015 \times \sqrt{15.778} = 13.8608\%$$ 
