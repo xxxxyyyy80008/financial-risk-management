@@ -325,4 +325,110 @@ To simulate from a random variable *X* with distribution *F(x)*:
 ## 4.5 Creating Time Series of Volatility
 
 
-## 4.6
+**Volatility and VaR**
+
+*   In the normal VaR model – and in some other parametric VaR models, such as VaR based on returns having a **Student-t distribution** – the only thing that determines VaR (at least over short horizons) is the **standard deviation** of returns
+*   These standard deviations are most commonly quoted as **volatilities** using the process of **annualization**
+*   By modelling the evolution of standard deviation (or volatility) over time, we can derive a **time series of normal VaR forecasts** as the input to **backtesting** a VaR model – see Topic 8
+
+
+**Annualization**
+
+*   Volatility is the **annualized** standard deviation of the returns
+*   To annualize a standard deviation assume 250 trading days per year (365 for crypto markets) and use the **square-root-of-time rule**
+*   So, if $\mu_1$ and $\sigma_1$ denote the mean and standard deviation of daily log returns, then $\mu_h = h\mu_1$ and $\sigma_h = \sqrt{h}\sigma_1$
+*   And, since volatility is $\sigma_{250}$, we have $\sigma_1 = \sigma_{250}/\sqrt{250}$ and $\sigma_{10} = \sigma_{250}/\sqrt{25}$
+*   For example standard deviation of 10-day returns for an asset with volatility 20% is $\sigma_{10} = 0.2/5 = 4\%$
+*   But in crypto markets, volatility is $\sigma_{365}$ and two-week volatility, for example, is $\sigma_{14}$
+
+
+**Calculating Historical Volatility on a Rolling Window**
+
+To obtain a time-series of historical volatility estimates:
+
+*   Fix the window size *n* for computing historical volatility
+*   Take a large sample of returns, size *N* >> *n*
+*   Calculate volatility using returns 1, 2, ... , *n*
+*   Shift the window by one return
+*   Calculate volatility using returns 2, 3, ... , *n* + 1
+*   Repeatedly add one return at the end and take out the return at the beginning of the previous window until the last window contains returns: *N* – *n* + 1, *N* – *n* + 2, . . ., *N*
+
+
+**Exponentially Weighted Moving Average (EWMA)**
+
+*   Instead of **equal weighting** of past returns, **weight the more recent returns more heavily**, based on exponential decay at rate $\lambda$, with $0 < \lambda < 1$:
+    $$ \hat{\sigma}_t^2 = \frac{r_t^2 + \lambda r_{t-1}^2 + \lambda^2 r_{t-2}^2 + \lambda^3 r_{t-3}^2 + \dots}{1 + \lambda + \lambda^2 + \lambda^3 + \dots} $$
+
+*   May be written in recursive form
+    $$ \hat{\sigma}_t^2 = (1 - \lambda)r_t^2 + \lambda \hat{\sigma}_{t-1}^2 $$
+
+*   Recursive form makes it easy to compute given some value for $\hat{\sigma}_0$
+
+
+**Proof**
+
+Because $1 + \lambda + \lambda^2 + \lambda^3 + \dots = (1 - \lambda)^{-1}$ we have:
+
+$$ \hat{\sigma}_t^2 = \frac{r_t^2 + \lambda r_{t-1}^2 + \lambda^2 r_{t-2}^2 + \lambda^3 r_{t-3}^2 + \dots}{1 + \lambda + \lambda^2 + \lambda^3 + \dots} $$
+
+$$ = (1 - \lambda)(r_t^2 + \lambda r_{t-1}^2 + \lambda^2 r_{t-2}^2 + \lambda^3 r_{t-3}^2 + \dots) $$
+
+$$ = (1 - \lambda)r_t^2 + \lambda(1 - \lambda)(r_{t-1}^2 + \lambda r_{t-2}^2 + \lambda^2 r_{t-3}^2 + \dots) $$
+
+$$ = (1 - \lambda)r_t^2 + \lambda \hat{\sigma}_{t-1}^2 $$
+
+
+## 4.6 Scaling VaR to Different Time Horizons
+
+
+**VaR for Different Holding Periods**
+
+*   Typically, we measure VaR using daily returns because VaR needs to be reported daily (at least) and we wouldn't have enough data for historical simulation if we used weekly or monthly returns
+*   But market risk capital requirements for banks require scaling up this daily VaR to a 10-day risk horizon
+*   And fund managers report VaR for longer holding periods, of a month or even a year
+
+
+**Example: Scaling Normal VaR with i.i.d. Returns**
+
+*   Let $\mu_1$ and $\sigma_1$ denote the mean and standard deviation of (discounted) daily returns
+*   Assuming the returns are i.i.d. then $\mu_h = \mu_1 h$ but we need the square root of time rule for the standard deviation:
+    $$ \sigma_h = \sigma_1 \sqrt{h} $$
+    and so: $\% \text{VaR}_{h,\alpha} = \Phi^{-1}(1 - \alpha) \sigma_1 \sqrt{h} - \mu_1 h$
+*   For instance, if $\mu_1 = 0$ and $\sigma_1 = 2\%$ then
+    $$ \% \text{VaR}_{10,1\%} = \Phi^{-1}(0.99) \times 2\% \times \sqrt{10} = 14.7\% $$
+
+
+**First Order Autoregressive Model – AR(1)**
+
+*   The i.i.d. assumption allows us to use the square root of time rule for normal VaR – and it is even used for historical VaR. But financial asset returns are not usually i.i.d.
+*   This doesn't matter much when $h \le 10$, but for large $h$ we should consider capturing **autocorrelation** in returns (or P&L) in the VaR formula
+*   We can do this by supposing that daily log returns follow a **first order autoregressive model**
+    $$ r_t = a + \varrho r_{t-1} + \varepsilon_t, \quad \varepsilon_t \sim N(0, \sigma^2) $$
+    where $\varrho$ denotes the **autocorrelation** in the returns
+
+**Scaling VaR with Autocorrelated Returns**
+
+*   If $\varrho$ is not zero, returns are not independent. The *h*-day log return is still the sum of *h* one-day returns but the square-root-of-time rule no longer applies
+*   Instead:
+    $$ \sigma_h = \sqrt{\tilde{h}}\sigma_1 $$
+    with $\tilde{h} = h + 2\varrho(1 - \varrho)^{-2} \{ (h - 1)(1 - \varrho) - \varrho(1 - \varrho^{h-1}) \}$
+*   The scaling of the mean is **not** affected by autocorrelation, we still have $\mu_h = \mu_1 h$    
+
+
+**Example: Scaling VaR with Autocorrelated Returns**
+
+*   A portfolio has daily returns, discounted to today, that are normally distributed and identically distributed with expectation 0 and a standard deviation of 1.5%. Find the 1% 1-day VaR.
+*   Now find the 1% 10-day VaR under the assumption that the daily excess returns (a) are independent and (b) follow a first order autoregressive process with autocorrelation 0.25.
+
+
+**Solution**
+
+$\text{VaR}_{1,0.01} = \Phi^{-1}(0.99) \times 0.015 = 2.326348 \times 0.015 = 3.4895\%$
+
+**Solution to (a):**
+Over 10 days this is simply
+$\text{VaR}_{10,0.01} = 2.326348 \times 0.015 \times \sqrt{10} = 11.0348\%$
+
+**Solution to (b):**
+We calculate $\tilde{h} = 15.778$. So the 10-day VaR is
+$\text{VaR}_{10,0.01} = 2.326348 \times 0.015 \times \sqrt{15.778} = 13.8608\%$
