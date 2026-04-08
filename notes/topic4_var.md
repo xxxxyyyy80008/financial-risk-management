@@ -248,7 +248,81 @@ There are two ways to get historical data on a portfolio that we currently hold:
 *   **Rebalancing to constant weights:** the current portfolio **weights** on each asset is kept constant ⇒ holdings change over time. Then VaR is easy to scale to different risk horizons
 *   Similar definitions apply in other contexts, e.g. **constant** sensitivities to risk factors
 
+**Monte Carlo VaR**
 
-## 4.4
-## 4.5
+*   The $\alpha\%$ h-day **Monte Carlo VaR** is minus the $\alpha$ quantile of a **simulated** h-day discounted return (or P&L) distribution
+*   Monte Carlo VaR can be applied with any parametric model, so it very flexible for modeling all portfolios – even those with very complex distributions
+*   Returns (or P&Ls) are simulated directly – or via a risk factor mapping, as described in detail in later topics
+*   Monte Carlo VaR is often more reliable than historical VaR for low $\alpha$ and large $h$
+
+
+**Inverse Distribution Sampling**
+
+To simulate from a random variable *X* with distribution *F(x)*:
+
+1. Draw a random number *u* from standard uniform *U* ∈ [0, 1]
+2. Plug *u* into the inverse of the distribution: *x* = *F*⁻¹(*u*)
+
+![alt text](images/4_3_inverse.png)
+
+## 4.4 Comparison of VaR Models
+
+**Results Depend on the Model Used**
+
+*   Compare the h-day α% VaR for different models
+*   Apply the normal, historical and Monte Carlo VaR models introduced above
+*   See how the VaR differs when we change h and α%
+
+
+**VaR Comparison for $1000 per point on S&P 500**
+
+**Table 1: % of Portfolio Value**
+
+| | Normal | Historical | Normal Monte Carlo |
+| :--- | :--- | :--- | :--- |
+| **5% 1-day VaR** | 2.06% | 1.93% | (2.04%) |
+| **1% 1-day VaR** | 2.92% | 3.44% | (2.83%) |
+| **5% 10-day VaR** | 6.52% | 6.11% | (6.77%) |
+| **1% 10-day VaR** | 9.23% | 10.89% | (9.20%) |
+
+**Table 2: Value Terms**
+
+| | Normal | Historical | Normal Monte Carlo |
+| :--- | :--- | :--- | :--- |
+| **5% 1-day VaR** | $45,061 | $42,182 | $(44,818) |
+| **1% 1-day VaR** | $63,730 | $75,187 | $(60,904) |
+| **5% 10-day VaR** | $142,494 | $133,391 | $(140,963) |
+| **1% 10-day VaR** | $201,533 | $237,763 | $(199,170) |
+
+
+*   VaR increases with the confidence level and risk horizon
+*   1% 10-day VaR of S&P 500 is about 10% of portfolio value
+*   Monte Carlo VaR changes every time we re-simulate (F9 in Excel) but **theoretically** – if we are using a **normal** inverse distribution in the sampling – the Monte Carlo VaR should be identical to normal VaR and differences are just due to **simulation error**
+*   Usually, 1% historical VaR is larger and 5% historical VaR is smaller, due to **excess kurtosis** in the data, i.e. historical distributions of returns are typically **leptokurtic**
+
+
+**Normal vs Leptokurtic Density**
+
+![Normal vs Leptokurtic](images/4_4_normal_leptokurtic.png)
+
+
+
+**Summary of VaR Models**
+
+**Normal VaR**
+*   Advantage: VaR may be calculated using an easy formula
+*   Limitation: Only applies to portfolios that are a linear function of normally distributed risk factors
+
+**Historical VaR**
+*   Advantage: No parametric assumption about returns distribution, applies to any portfolio
+*   Limitation: Sample size needs to be large for accuracy in tails
+
+**Monte Carlo VaR**
+*   Advantage: Applies to any portfolio
+*   Limitation: Large number (e.g. $10^6$) simulations $\Rightarrow$ time consuming
+
+
+## 4.5 Creating Time Series of Volatility
+
+
 ## 4.6
