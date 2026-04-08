@@ -89,17 +89,17 @@ Choice between portfolio or risk-factor level depends on regulatory requirements
 
 **Four Steps for VaR Estimation**
 
-1. Set the first parameter: the holding period *h*
-2. Create a probability distribution for the *discounted* portfolio returns (or P&L) over the next *h* days
-3. Set the second parameter: the significance level *α*
-4. Estimate VaR as −1 × *α*-quantile of this distribution
+1. Set the first parameter: the holding period $h$
+2. Create a probability distribution for the *discounted* portfolio returns (or P&L) over the next $h$ days
+3. Set the second parameter: the significance level $\alpha$
+4. Estimate VaR as $-1 \times \alpha$-quantile of this distribution
 
 Different assumptions for step 2 ⇒ different VaR models
 
 
 **Three Main VaR Models**
 
-1.  **Normal VaR:** Assumes the distribution of returns is N(μ, σ²) – We use mean and standard deviation of returns over a recent sample as estimates for μ and σ
+1.  **Normal VaR:** Assumes the distribution of returns is $N(\mu, \sigma^2)$ – We use mean and standard deviation of returns over a recent sample as estimates for $\mu$ and $\sigma$
 2.  **Historical VaR:** Build a histogram of historical of returns (or P&L) and read off the VaR from a quantile
 3.  **Monte Carlo VaR:** Assume that returns have some parametric distribution, then simulate lots of returns from this distribution, read off the % VaR as a quantile
 
@@ -114,23 +114,21 @@ Note: It is possible to apply any of these models to P&L distributions too – w
 
 **Normal VaR Model**
 
-**Z ~ N(0, 1) is the standard normal variable**
+$Z \sim N(0, 1)$ is the standard normal variable
 
-*   **φ = density function (pdf)**
-*   **φ(z) = $\frac{1}{\sqrt{2\pi}} \exp(-0.5z^2)$**
+*   $\varphi$ = density function (pdf)
+*   $\varphi(z) = \frac{1}{\sqrt{2\pi}} \exp(-0.5z^2)$
 
-*   **Φ = distribution function (cdf)**
-*   **Values of Φ(z) are given in statistical tables**
+*   $\Phi$ = distribution function (cdf)
+*   Values of $\Phi(z)$ are given in statistical tables
 
 **Interpretation of Standard Normal Quantile**
 
 For the standard normal distribution: (in Excel)
 
-= NORMSDIST(x) gives the value Φ(z)
-= NORMSINV(α) gives a quantile zα of the standard normal distribution, such that P(Z < zα) = α
-e.g. NORMSDIST(0.15)=0.56 and NORMSINV(0.56)=0.15
-
-Φ distribution function
+`= NORMSDIST(x)` gives the value $\Phi(z)$  
+`= NORMSINV(α)` gives a quantile $z_\alpha$ of the standard normal distribution, such that $P(Z < z_\alpha) = \alpha$  
+e.g. `NORMSDIST(0.15)=0.56` and `NORMSINV(0.56)=0.15`
 
 
 **Quantiles and Critical Values**
@@ -139,8 +137,8 @@ e.g. NORMSDIST(0.15)=0.56 and NORMSINV(0.56)=0.15
 *   The inverse function $\Phi^{-1}(\alpha)$ for $\alpha \in (0, 1)$ is the $\alpha$-quantile $z_\alpha$
 *   When $\alpha$ is near 0 or 1 we call the quantile a **critical value**
 *   We often use the following critical values of $N(0, 1)$:
-    *   $\Phi^{-1}(0.99) = 2.326, \Phi^{-1}(0.975) = 1.960, \Phi^{-1}(0.95) = 1.645$
-    *   $\Phi^{-1}(0.01) = -2.326, \Phi^{-1}(0.025) = -1.960, \Phi^{-1}(0.05) = -1.645$
+    *   $\Phi^{-1}(0.99) = 2.326,\ \Phi^{-1}(0.975) = 1.960,\ \Phi^{-1}(0.95) = 1.645$
+    *   $\Phi^{-1}(0.01) = -2.326,\ \Phi^{-1}(0.025) = -1.960,\ \Phi^{-1}(0.05) = -1.645$
 *   Because normal distributions are symmetric we have
     *   $\Phi^{-1}(1 - \alpha) = -\Phi^{-1}(\alpha)$
 
@@ -148,8 +146,8 @@ e.g. NORMSDIST(0.15)=0.56 and NORMSINV(0.56)=0.15
 **Calculating a Quantile: Three Ways**
 
 1.  **Normal VaR:** Use the $\alpha$-quantiles of the standard normal distribution denoted $\Phi^{-1}(\alpha)$ and apply the **standard normal transformation** to convert them into quantiles of a $N(\mu, \sigma^2)$ distribution
-2.  **Historical VaR:** Use the **= PERCENTILE** function in Excel on the time series of historical portfolio returns or P&L
-3.  **Monte Carlo VaR:** Use the **= PERCENTILE** function in Excel on the simulated data for portfolio returns or P&L, based on some parametric assumption
+2.  **Historical VaR:** Use the `= PERCENTILE` function in Excel on the time series of historical portfolio returns or P&L
+3.  **Monte Carlo VaR:** Use the `= PERCENTILE` function in Excel on the simulated data for portfolio returns or P&L, based on some parametric assumption
 
 
 ## 4.3 Building VaR Models
@@ -163,17 +161,16 @@ e.g. NORMSDIST(0.15)=0.56 and NORMSINV(0.56)=0.15
 
 **Formula for Normal VaR**
 
-Assumption on portfolio *h*-day returns:
+Assumption on portfolio $h$-day returns:
 $$X_h \overset{i.i.d.}{\sim} N(\mu_h, \sigma_h^2)$$
 
 Then:
 $$\text{VaR}_{h,\alpha} = \Phi^{-1}(1 - \alpha)\sigma_h - \mu_h$$
 
-When *h* is small we often assume that $\mu_h = 0$
+When $h$ is small we often assume that $\mu_h = 0$
 
-For example, if $X_1 \overset{i.i.d.}{\sim} N(0, 0.8^2)$ then $$\text{VaR}_{1,5\%} = \Phi^{-1}(0.95) \times 0.8 = 1.645 \times 0.8 = 1.316\%$$
-
-$$\text{VaR}_{1,5 \%} = \Phi^{-1}(0.95) \times 0.8 = 1.645 \times 0.8 = 1.316 \%$$
+For example, if $X_1 \overset{i.i.d.}{\sim} N(0, 0.8^2)$ then 
+$$\text{VaR}_{1,5\%} = \Phi^{-1}(0.95) \times 0.8 = 1.645 \times 0.8 = 1.316\%$$
 
 Note: VaR is given as a percent of the current portfolio value, since the model is based on returns
 
@@ -226,11 +223,11 @@ What is the 10% VaR over a 1-year horizon of $2 million invested in a fund whose
 
 The return VaR is given by
 
-VaR = Φ⁻¹(0.9) × 0.12 − 0.05 = 1.281552 × 0.12 − 0.05 = 10.3786%.
+$$\text{VaR} = \Phi^{-1}(0.9) \times 0.12 - 0.05 = 1.281552 \times 0.12 - 0.05 = 10.3786\%.$$
 
 In terms of P&L we have
 
-VaR = 10.3786% × $2m = $207,572.
+$$\text{VaR} = 10.3786\% \times \$2\text{m} = \$207,572.$$
 
 
 **Other VaR Models**
@@ -251,7 +248,7 @@ There are two ways to get historical data on a portfolio that we currently hold:
 
 **Monte Carlo VaR**
 
-*   The $\alpha\%$ h-day **Monte Carlo VaR** is minus the $\alpha$ quantile of a **simulated** h-day discounted return (or P&L) distribution
+*   The $\alpha\%$ $h$-day **Monte Carlo VaR** is minus the $\alpha$ quantile of a **simulated** $h$-day discounted return (or P&L) distribution
 *   Monte Carlo VaR can be applied with any parametric model, so it very flexible for modeling all portfolios – even those with very complex distributions
 *   Returns (or P&Ls) are simulated directly – or via a risk factor mapping, as described in detail in later topics
 *   Monte Carlo VaR is often more reliable than historical VaR for low $\alpha$ and large $h$
@@ -259,10 +256,10 @@ There are two ways to get historical data on a portfolio that we currently hold:
 
 **Inverse Distribution Sampling**
 
-To simulate from a random variable *X* with distribution *F(x)*:
+To simulate from a random variable $X$ with distribution $F(x)$:
 
-1. Draw a random number *u* from standard uniform *U* ∈ [0, 1]
-2. Plug *u* into the inverse of the distribution: *x* = *F*⁻¹(*u*)
+1. Draw a random number $u$ from standard uniform $U \in [0, 1]$
+2. Plug $u$ into the inverse of the distribution: $x = F^{-1}(u)$
 
 ![alt text](images/4_3_inverse.png)
 
@@ -270,9 +267,9 @@ To simulate from a random variable *X* with distribution *F(x)*:
 
 **Results Depend on the Model Used**
 
-*   Compare the h-day α% VaR for different models
+*   Compare the $h$-day $\alpha\%$ VaR for different models
 *   Apply the normal, historical and Monte Carlo VaR models introduced above
-*   See how the VaR differs when we change h and α%
+*   See how the VaR differs when we change $h$ and $\alpha\%$
 
 
 **VaR Comparison for $1000 per point on S&P 500**
@@ -347,21 +344,21 @@ To simulate from a random variable *X* with distribution *F(x)*:
 
 To obtain a time-series of historical volatility estimates:
 
-*   Fix the window size *n* for computing historical volatility
-*   Take a large sample of returns, size *N* >> *n*
-*   Calculate volatility using returns 1, 2, ... , *n*
+*   Fix the window size $n$ for computing historical volatility
+*   Take a large sample of returns, size $N \gg n$
+*   Calculate volatility using returns 1, 2, ... , $n$
 *   Shift the window by one return
-*   Calculate volatility using returns 2, 3, ... , *n* + 1
-*   Repeatedly add one return at the end and take out the return at the beginning of the previous window until the last window contains returns: *N* – *n* + 1, *N* – *n* + 2, . . ., *N*
+*   Calculate volatility using returns 2, 3, ... , $n+1$
+*   Repeatedly add one return at the end and take out the return at the beginning of the previous window until the last window contains returns: $N-n+1$, $N-n+2$, ..., $N$
 
 
 **Exponentially Weighted Moving Average (EWMA)**
 
 *   Instead of **equal weighting** of past returns, **weight the more recent returns more heavily**, based on exponential decay at rate $\lambda$, with $0 < \lambda < 1$:
-    $$ \hat{\sigma}_t^2 = \frac{r_t^2 + \lambda r_{t-1}^2 + \lambda^2 r_{t-2}^2 + \lambda^3 r_{t-3}^2 + \dots}{1 + \lambda + \lambda^2 + \lambda^3 + \dots} $$
+    $$\hat{\sigma}_t^2 = \frac{r_t^2 + \lambda r_{t-1}^2 + \lambda^2 r_{t-2}^2 + \lambda^3 r_{t-3}^2 + \dots}{1 + \lambda + \lambda^2 + \lambda^3 + \dots}$$
 
 *   May be written in recursive form
-    $$ \hat{\sigma}_t^2 = (1 - \lambda)r_t^2 + \lambda \hat{\sigma}_{t-1}^2 $$
+    $$\hat{\sigma}_t^2 = (1 - \lambda)r_t^2 + \lambda \hat{\sigma}_{t-1}^2$$
 
 *   Recursive form makes it easy to compute given some value for $\hat{\sigma}_0$
 
@@ -370,13 +367,13 @@ To obtain a time-series of historical volatility estimates:
 
 Because $1 + \lambda + \lambda^2 + \lambda^3 + \dots = (1 - \lambda)^{-1}$ we have:
 
-$$ \hat{\sigma}_t^2 = \frac{r_t^2 + \lambda r_{t-1}^2 + \lambda^2 r_{t-2}^2 + \lambda^3 r_{t-3}^2 + \dots}{1 + \lambda + \lambda^2 + \lambda^3 + \dots} $$
+$$\hat{\sigma}_t^2 = \frac{r_t^2 + \lambda r_{t-1}^2 + \lambda^2 r_{t-2}^2 + \lambda^3 r_{t-3}^2 + \dots}{1 + \lambda + \lambda^2 + \lambda^3 + \dots}$$
 
-$$ = (1 - \lambda)(r_t^2 + \lambda r_{t-1}^2 + \lambda^2 r_{t-2}^2 + \lambda^3 r_{t-3}^2 + \dots) $$
+$$= (1 - \lambda)(r_t^2 + \lambda r_{t-1}^2 + \lambda^2 r_{t-2}^2 + \lambda^3 r_{t-3}^2 + \dots)$$
 
-$$ = (1 - \lambda)r_t^2 + \lambda(1 - \lambda)(r_{t-1}^2 + \lambda r_{t-2}^2 + \lambda^2 r_{t-3}^2 + \dots) $$
+$$= (1 - \lambda)r_t^2 + \lambda(1 - \lambda)(r_{t-1}^2 + \lambda r_{t-2}^2 + \lambda^2 r_{t-3}^2 + \dots)$$
 
-$$ = (1 - \lambda)r_t^2 + \lambda \hat{\sigma}_{t-1}^2 $$
+$$= (1 - \lambda)r_t^2 + \lambda \hat{\sigma}_{t-1}^2$$
 
 
 ## 4.6 Scaling VaR to Different Time Horizons
@@ -393,10 +390,10 @@ $$ = (1 - \lambda)r_t^2 + \lambda \hat{\sigma}_{t-1}^2 $$
 
 *   Let $\mu_1$ and $\sigma_1$ denote the mean and standard deviation of (discounted) daily returns
 *   Assuming the returns are i.i.d. then $\mu_h = \mu_1 h$ but we need the square root of time rule for the standard deviation:
-    $$ \sigma_h = \sigma_1 \sqrt{h} $$
+    $$\sigma_h = \sigma_1 \sqrt{h}$$
     and so: $\% \text{VaR}_{h,\alpha} = \Phi^{-1}(1 - \alpha) \sigma_1 \sqrt{h} - \mu_1 h$
 *   For instance, if $\mu_1 = 0$ and $\sigma_1 = 2\%$ then
-    $$ \% \text{VaR}_{10,1\%} = \Phi^{-1}(0.99) \times 2\% \times \sqrt{10} = 14.7\% $$
+    $$\% \text{VaR}_{10,1\%} = \Phi^{-1}(0.99) \times 2\% \times \sqrt{10} = 14.7\%$$
 
 
 **First Order Autoregressive Model – AR(1)**
@@ -404,14 +401,14 @@ $$ = (1 - \lambda)r_t^2 + \lambda \hat{\sigma}_{t-1}^2 $$
 *   The i.i.d. assumption allows us to use the square root of time rule for normal VaR – and it is even used for historical VaR. But financial asset returns are not usually i.i.d.
 *   This doesn't matter much when $h \le 10$, but for large $h$ we should consider capturing **autocorrelation** in returns (or P&L) in the VaR formula
 *   We can do this by supposing that daily log returns follow a **first order autoregressive model**
-    $$ r_t = a + \varrho r_{t-1} + \varepsilon_t, \quad \varepsilon_t \sim N(0, \sigma^2) $$
+    $$r_t = a + \varrho r_{t-1} + \varepsilon_t, \quad \varepsilon_t \sim N(0, \sigma^2)$$
     where $\varrho$ denotes the **autocorrelation** in the returns
 
 **Scaling VaR with Autocorrelated Returns**
 
-*   If $\varrho$ is not zero, returns are not independent. The *h*-day log return is still the sum of *h* one-day returns but the square-root-of-time rule no longer applies
+*   If $\varrho$ is not zero, returns are not independent. The $h$-day log return is still the sum of $h$ one-day returns but the square-root-of-time rule no longer applies
 *   Instead:
-    $$ \sigma_h = \sqrt{\tilde{h}}\sigma_1 $$
+    $$\sigma_h = \sqrt{\tilde{h}}\sigma_1$$
     with $\tilde{h} = h + 2\varrho(1 - \varrho)^{-2} \{ (h - 1)(1 - \varrho) - \varrho(1 - \varrho^{h-1}) \}$
 *   The scaling of the mean is **not** affected by autocorrelation, we still have $\mu_h = \mu_1 h$    
 
@@ -424,12 +421,12 @@ $$ = (1 - \lambda)r_t^2 + \lambda \hat{\sigma}_{t-1}^2 $$
 
 **Solution**
 
-$\text{VaR}_{1,0.01} = \Phi^{-1}(0.99) \times 0.015 = 2.326348 \times 0.015 = 3.4895\%$
+$$\text{VaR}_{1,0.01} = \Phi^{-1}(0.99) \times 0.015 = 2.326348 \times 0.015 = 3.4895\%$$
 
 **Solution to (a):**
 Over 10 days this is simply
-$\text{VaR}_{10,0.01} = 2.326348 \times 0.015 \times \sqrt{10} = 11.0348\%$
+$$\text{VaR}_{10,0.01} = 2.326348 \times 0.015 \times \sqrt{10} = 11.0348\%$$
 
 **Solution to (b):**
 We calculate $\tilde{h} = 15.778$. So the 10-day VaR is
-$\text{VaR}_{10,0.01} = 2.326348 \times 0.015 \times \sqrt{15.778} = 13.8608\%$
+$$\text{VaR}_{10,0.01} = 2.326348 \times 0.015 \times \sqrt{15.778} = 13.8608\%$$
