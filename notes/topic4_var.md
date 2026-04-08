@@ -171,24 +171,7 @@ $$\text{VaR}_{h,\alpha} = \Phi^{-1}(1 - \alpha)\sigma_h - \mu_h$$
 
 When *h* is small we often assume that $\mu_h = 0$
 
-For example, if $X_1 \overset{i.i.d.}{\sim} N(0, 0.8^2)$ then
-$$\text{VaR}_{1,5\%} = \Phi^{-1}(0.95) \times 0.8 = 1.645 \times 0.8 = 1.316\%$$
-
-Note: VaR is given as a percent of the current portfolio value, since the model is based on returns
-
-**Formula for Normal VaR**
-
-Assumption on portfolio *h*-day returns:
-$$X_h \overset{i.i.d.}{\sim} N(\mu_h, \sigma_h^2)$$
-
-Then:
-$$\text{VaR}_{h,\alpha} = \Phi^{-1}(1 - \alpha)\sigma_h - \mu_h$$
-
-When *h* is small we often assume that $\mu_h = 0$
-
-For example, if $X_1 \overset{i.i.d.}{\sim} N(0, 0.8^2)$ then
-$$
-\text{VaR}_{1,5\%} = \Phi^{-1}(0.95) \times 0.8 = 1.645 \times 0.8 = 1.316\% $$
+For example, if $X_1 \overset{i.i.d.}{\sim} N(0, 0.8^2)$ then $$\text{VaR}_{1,5\%} = \Phi^{-1}(0.95) \times 0.8 = 1.645 \times 0.8 = 1.316\%$$
 
 Note: VaR is given as a percent of the current portfolio value, since the model is based on returns
 
