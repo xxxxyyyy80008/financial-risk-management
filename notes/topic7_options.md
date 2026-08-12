@@ -605,6 +605,7 @@ $$ \Rightarrow \mathbf{x} = \mathbf{A}^{-1}\mathbf{b} = \begin{pmatrix} 0.5 & -0
     To see how this works:
 
 *   Suppose the share price is $100 and the ATM call option to buy 10 shares costs 
+
 $\USD 9 \times 10 = \$90$
 
 *   Then the delta-hedged portfolio has a long position in 5 shares, with value 
