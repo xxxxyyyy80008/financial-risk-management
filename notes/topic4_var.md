@@ -208,9 +208,7 @@ $$
 
 where $\mu_h^{\$}$ and $\sigma_h^{\$}$ are the mean and standard deviation of the P&L.
 
-where $\mu_h^{\$}$ and $\sigma_h^{\$}$ are the mean and standard deviation of the P&L
-
-where $\mu_h^{\text{USD}}$ and $\sigma_h^{\text{USD}}$ are the mean and standard deviation of the P&L
+where $$\$\mu_h^{\$}$$ and $\sigma_h^{\$}$ are the mean and standard deviation of the P&L.
 
 where $\mu_h$<sup>&#36;</sup> and $\sigma_h$<sup>&#36;</sup> are the mean and standard deviation of the P&L
 
