@@ -171,12 +171,6 @@ When $h$ is small we often assume that $\mu_h = 0$
 
 For example, if $X_1 \overset{i.i.d.}{\sim} N(0, 0.8^2)$ then 
 
-$$
-\text{VaR}_{1,5\%} = \Phi^{-1}(0.95) \times 0.8 = 1.645 \times 0.8 = 1.316\%
-$$
-
-![](images/4-math-001.png)
-
 <img src="images/4-math-001.png" alt="" width="300" height="200">
 
 Note: VaR is given as a percent of the current portfolio value, since the model is based on returns.
