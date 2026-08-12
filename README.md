@@ -14,7 +14,7 @@ Study notes on Financial Risk Management by Professor Carol Alexander.
 8. [Capital Reserves for Market Risk](notes/topic8_capital.md)
 9. [Math Foundations](notes/math_basic.md)
 
-
+```text
 Topic 1: Introduction to Financial Risk Management
     1. What is Financial Risk Management?
     2. Financial Assets and Instruments
@@ -71,8 +71,8 @@ Topic 8: Capital Reserves for Market Risk
     4. Validation of Internal Risk Models
     5. Statistical Backtests
     6. Scenario Analysis and Stress Testing Portfolios
+```
 
-    
 ## Python Implementations
 
 
