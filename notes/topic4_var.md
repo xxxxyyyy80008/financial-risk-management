@@ -206,13 +206,7 @@ $$
 \$\text{VaR}_{h,\alpha} = \Phi^{-1}(1 - \alpha)\sigma_h^{\$} - \mu_h^{\$}
 $$
 
-where $\mu_h^{\$}$ and $\sigma_h^{\$}$ are the mean and standard deviation of the P&L.
-
-where $$
-\mu_h^{\$}
-$$ and $\sigma_h^{\$}$ are the mean and standard deviation of the P&L.
-
-where $\mu_h$<sup>&#36;</sup> and $\sigma_h$<sup>&#36;</sup> are the mean and standard deviation of the P&L
+where $\mu_h$<sup>&#36;</sup> and $\sigma_h$<sup>&#36;</sup> are the mean and standard deviation of the P&L.
 
 **Example 1**
 
