@@ -170,6 +170,7 @@ $$\text{VaR}_{h,\alpha} = \Phi^{-1}(1 - \alpha)\sigma_h - \mu_h$$
 When $h$ is small we often assume that $\mu_h = 0$
 
 For example, if $X_1 \overset{i.i.d.}{\sim} N(0, 0.8^2)$ then 
+
 $$
 \text{VaR}_{1,5\%} = \Phi^{-1}(0.95) \times 0.8 = 1.645 \times 0.8 = 1.316\%
 $$
