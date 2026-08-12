@@ -512,7 +512,7 @@ $$AA^{-1} = A^{-1}A = I$$
 - **Determinant**: MDETERM (cell refs)
 
 
-# Solving Simultaneous Linear Equations
+### Solving Simultaneous Linear Equations
 
 *   Write the simultaneous equations in matrix form:
 
@@ -664,7 +664,8 @@ $$ \Rightarrow \mathbf{x} = \mathbf{A}^{-1}\mathbf{b} = \begin{pmatrix} 0.5 & -0
     $$x + 2y = 80$$
 
 3.  The solution is:
-    $$ \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 1 & 3 \\ 1 & 2 \end{pmatrix}^{-1} \begin{pmatrix} 100 \\ 80 \end{pmatrix} = \begin{pmatrix} -2 & 3 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} 100 \\ 80 \end{pmatrix} = \begin{pmatrix} 40 \\ 20 \end{pmatrix} $$
+
+$$ \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 1 & 3 \\ 1 & 2 \end{pmatrix}^{-1} \begin{pmatrix} 100 \\ 80 \end{pmatrix} = \begin{pmatrix} -2 & 3 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} 100 \\ 80 \end{pmatrix} = \begin{pmatrix} 40 \\ 20 \end{pmatrix} $$
 
 4.  Hence buy 40 of option 2 and buy 20 of option 3 to make the position gamma-vega neutral
 
@@ -695,9 +696,13 @@ $$ \Rightarrow \mathbf{x} = \mathbf{A}^{-1}\mathbf{b} = \begin{pmatrix} 0.5 & -0
 **Matrix Inputs (Left Side)**
 
 *   **Gamma-Vega Matrix:**
-    $$ \begin{matrix} 1 & 3 \\ 1 & 2 \end{matrix} $$
+
+$$ \begin{matrix} 1 & 3 \\ 1 & 2 \end{matrix} $$
+
 *   **Gamma-Vega Vector:**
-    $$ \begin{matrix} 100 \\ 80 \end{matrix} $$
+
+$$ \begin{matrix} 100 \\ 80 \end{matrix} $$
+
 
 **Rounded Results Table (Right Side)**
 
@@ -715,7 +720,8 @@ $$ \Rightarrow \mathbf{x} = \mathbf{A}^{-1}\mathbf{b} = \begin{pmatrix} 0.5 & -0
 **Delta-Gamma-Vega Approximation**
 
 *   Writing the option price as a function $f(S, \sigma)$, the **delta-gamma-vega approximation** for the change in option price, for a small change $h_s$ in $S$ and a small change $h_\sigma$ in $\sigma$, is:
-    $$f(S + h_s, \sigma + h_\sigma) - f(S, \sigma) \approx h_s\delta + 0.5h_s^2\gamma + h_\sigma\nu$$
+
+$$f(S + h_s, \sigma + h_\sigma) - f(S, \sigma) \approx h_s\delta + 0.5h_s^2\gamma + h_\sigma\nu$$
 
 *   This way, given any pricing model $f(S, \sigma)$ for any option, we can compute the delta, gamma and vega and then use this to approximate a new option price $f(S + h_s, \sigma + h_\sigma)$.
 
@@ -734,13 +740,16 @@ $$ \Rightarrow \mathbf{x} = \mathbf{A}^{-1}\mathbf{b} = \begin{pmatrix} 0.5 & -0
 **Solution (By Hand)**
 
 1.  We have $h_s = -5$, $h_\sigma = 2$ (or, 2% if you have not divided vega by 100) and from the Greeks example we have
-    $$ \delta_{BS} = 0.34638, \quad \gamma_{BS} = 0.03677, \quad \nu_{BS} = 0.10579 $$
+
+$$ \delta_{BS} = 0.34638, \quad \gamma_{BS} = 0.03677, \quad \nu_{BS} = 0.10579 $$
 
 2.  Delta-gamma approximation to change in option price is:
-    $$ \Delta f = -5 \times 0.34638 + 0.5 \times 25 \times 0.03677 = -1.27224 $$
+
+$$ \Delta f = -5 \times 0.34638 + 0.5 \times 25 \times 0.03677 = -1.27224 $$
 
 3.  Delta-gamma-vega approximation is:
-    $$ \Delta f = -5 \times 0.34638 + 0.5 \times 25 \times 0.03677 + 2 \times 0.10579 = -1.06067 $$
+
+$$ \Delta f = -5 \times 0.34638 + 0.5 \times 25 \times 0.03677 + 2 \times 0.10579 = -1.06067 $$
 
 
 
@@ -769,7 +778,9 @@ Based on Historical Simulation
 
 1.  Find the portfolio's net position delta, gamma and vega
 2.  Use the delta-gamma-vega approximation to the P&L:
-    $$f(S + h_s, \sigma + h_\sigma) - f(S, \sigma) \approx h_s \delta + 0.5h_s^2 \gamma + h_\sigma \nu$$
+
+$$f(S + h_s, \sigma + h_\sigma) - f(S, \sigma) \approx h_s \delta + 0.5h_s^2 \gamma + h_\sigma \nu$$
+
 3.  Find long historical time series for both $h_s$, the daily change in price on the underlying, and $h_\sigma$, the daily change in **implied volatility** to approximate an historical series of daily P&L (or drop the vega term and just use the delta-gamma approximation)
 4.  Compute the $\alpha\%$ $h$-day VaR using the PERCENTILE function in the usual way
 
