@@ -599,28 +599,24 @@ $$ \Rightarrow \mathbf{x} = \mathbf{A}^{-1}\mathbf{b} = \begin{pmatrix} 0.5 & -0
 **Example of Delta Hedge**
 
 *   I have a short position on an ATM call option to buy 10 shares
-*   Suppose the position delta is $-1 \times 10 \times 0.5 = -5$
+*   Suppose the position delta is $-1 x10 x 0.5 = -5
 *   Then a delta hedge must **buy 5 shares**
 
     To see how this works:
 
-*   Suppose the share price is $100 and the ATM call option to buy 10 shares costs 
+*   Suppose the share price is $100 and the ATM call option to buy 10 shares costs $9x10 = $90
 
-$USD 9 \times 10 = USD90$
-
-*   Then the delta-hedged portfolio has a long position in 5 shares, with value 
-$\$100 \times 5 = \$500$ and a short position with value $-\$90$
-*   So the value of the delta-hedged portfolio is $\$500 - \$90 = \$410$
-
+*   Then the delta-hedged portfolio has a long position in 5 shares, with value $100 x 5 = $500 and a short position with value -$90
+*   So the value of the delta-hedged portfolio is $500 - $90 = $410
 
 
 **Example of Delta Hedge**
 
 *   So, our delta-hedged portfolio starts with value $410 – but now suppose the share price **increases by $2**
-*   Then the call option price should **increase by about** $2 \times 0.5 \times 10 = \$10$
-*   The delta-hedged portfolio is **long** 5 shares with value $\$102 \times 5 = \$510$ and **short** the call option, now with value about $-(\$90 + \$10) = \$100$
+*   Then the call option price should **increase by about** $2 x 0.5 x 10 = $10
+*   The delta-hedged portfolio is **long** 5 shares with value $102 x 5 = $510 and **short** the call option, now with value about -($90 + $10) = $100
 *   So the value of the delta-hedged portfolio is still about $410
-*   And if the share price were to **fall by $3**, so the value of 5 shares becomes $\$97 \times 5 = \$485$ then the **call option price should also fall, by about** $\$3 \times 0.5 \times 10 = \$15$ so the value of our short position on this option becomes $-(\$90 - \$15) = -\$75$ and the delta-hedged portfolio value is (approximately) $\$485 - \$75 = \$410$, again
+*   And if the share price were to **fall by $3**, so the value of 5 shares becomes $97 x 5 = $485 then the **call option price should also fall, by about** $3 x 0.5 x 10 = $15 so the value of our short position on this option becomes -($90 - $15) = -$75 and the delta-hedged portfolio value is (approximately) $485 - $75 = $410, again
 
 
 
