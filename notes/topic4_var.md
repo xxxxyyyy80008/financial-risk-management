@@ -175,13 +175,9 @@ $$
 \text{VaR}_{1,5\%} = \Phi^{-1}(0.95) \times 0.8 = 1.645 \times 0.8 = 1.316\%
 $$
 
+![](images/4-math-001.png)
+
 Note: VaR is given as a percent of the current portfolio value, since the model is based on returns.
-
-$$\text{VaR}_{5\%} = \Phi^{-1}(0.95)*0.8 = 1.645x0.8 = 1.316\%$$
-
-$$
-\text{VaR}_{1{,}5\%} = \Phi^{-1}(0.95) \times 0.8 = 1.645 \times 0.8 = 1.316\%
-$$
 
 **Proof of Normal VaR Formula**
 
