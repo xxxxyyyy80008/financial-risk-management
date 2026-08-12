@@ -212,10 +212,19 @@ where $\mu_h^{\$}$ and $\sigma_h^{\$}$ are the mean and standard deviation of th
 But for portfolios which might have zero or negative values, returns do not make sense, so we cannot calculate $\mu_h$ and $\sigma_h$. Instead:
 
 ```math
-\operatorname{VaR}_{h,\alpha}^{\text{USD}} = \Phi^{-1}(1-\alpha)\,\sigma_h^{\text{USD}} - \mu_h^{\text{USD}}
+\operatorname{VaR}_{h,\alpha}^{\$} = \Phi^{-1}(1-\alpha)\,\sigma_h^{\$} - \mu_h^{\$}
 ```
 
-where $\mu_h^{\text{USD}}$ and $\sigma_h^{\text{USD}}$ are the mean and standard deviation of the P&L.
+where $\mu_h^{\$}$ and $\sigma_h^{\$}$ are the mean and standard deviation of the P&L.
+
+
+But for portfolios which might have zero or negative values, returns do not make sense, so we cannot calculate $\mu_h$ and $\sigma_h$. Instead:
+
+$$
+\operatorname{VaR}_{h,\alpha}^{\$} = \Phi^{-1}(1-\alpha)\,\sigma_h^{\$} - \mu_h^{\$}
+$$
+
+where $\mu_h^{\$}$ and $\sigma_h^{\$}$ are the mean and standard deviation of the P&L.
 ====
 
 **Example 1**
