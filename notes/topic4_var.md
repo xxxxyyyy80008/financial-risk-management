@@ -357,11 +357,13 @@ To obtain a time-series of historical volatility estimates:
 
 *   Instead of **equal weighting** of past returns, **weight the more recent returns more heavily**, based on exponential decay at rate $\lambda$, with $0 < \lambda < 1$:
 
-    $$\hat{\sigma}_t^2 = \frac{r_t^2 + \lambda r_{t-1}^2 + \lambda^2 r_{t-2}^2 + \lambda^3 r_{t-3}^2 + \dots}{1 + \lambda + \lambda^2 + \lambda^3 + \dots}$$
+
+$$\hat{\sigma}_t^2 = \frac{r_t^2 + \lambda r_{t-1}^2 + \lambda^2 r_{t-2}^2 + \lambda^3 r_{t-3}^2 + \dots}{1 + \lambda + \lambda^2 + \lambda^3 + \dots}$$
+
 
 *   May be written in recursive form
 
-    $$\hat{\sigma}_t^2 = (1 - \lambda)r_t^2 + \lambda \hat{\sigma}_{t-1}^2$$
+$$\hat{\sigma}_t^2 = (1 - \lambda)r_t^2 + \lambda \hat{\sigma}_{t-1}^2$$
 
 *   Recursive form makes it easy to compute given some value for $\hat{\sigma}_0$
 
