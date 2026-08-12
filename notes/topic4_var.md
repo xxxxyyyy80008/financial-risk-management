@@ -208,6 +208,12 @@ $$
 
 where $\mu_h^{\$}$ and $\sigma_h^{\$}$ are the mean and standard deviation of the P&L.
 
+where $\mu_h^{\$}$ and $\sigma_h^{\$}$ are the mean and standard deviation of the P&L
+
+where $\mu_h^{\text{USD}}$ and $\sigma_h^{\text{USD}}$ are the mean and standard deviation of the P&L
+
+where $\mu_h$<sup>&#36;</sup> and $\sigma_h$<sup>&#36;</sup> are the mean and standard deviation of the P&L
+
 **Example 1**
 
 Calculate the 1% 1-day VaR for a portfolio with value $1m which is expected to return the discount rate with volatility 20%. Assume the discounted returns are normally i.i.d. distributed and that there are 250 trading days per annum.
