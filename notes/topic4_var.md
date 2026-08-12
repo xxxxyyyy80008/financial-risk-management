@@ -177,6 +177,8 @@ $$
 
 ![](images/4-math-001.png)
 
+<img src="images/4-math-001.png" alt="" width="300" height="200">
+
 Note: VaR is given as a percent of the current portfolio value, since the model is based on returns.
 
 **Proof of Normal VaR Formula**
