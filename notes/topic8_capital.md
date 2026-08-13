@@ -377,11 +377,16 @@ How can we test whether a particular VaR methodology is accurate?
 **Backtesting Methodology**
 
 1.  Produce a time series of $n$ estimates for 1-day α% VaR and set
-    $$I_{\alpha,t} = \begin{cases} 1 & \text{if } X_{t+1} < -\text{VaR}_{1,\alpha,t} \\ 0 & \text{otherwise} \end{cases}$$
+
+$$I_{\alpha,t} = \begin{cases} 1 & \text{if } X_{t+1} < -\text{VaR}_{1,\alpha,t} \\ 0 & \text{otherwise} \end{cases}$$
+
 2.  If the internal model is accurate then $I_{\alpha,t}$ should follow an independent process with **success** probability α, so $S_{n,\alpha} = \sum_t I_{\alpha,t}$ has a **binomial distribution** with
-    $$\mathbb{E}[S_{n,\alpha}] = n\alpha \quad \mathbb{V}[S_{n,\alpha}] = n\alpha(1-\alpha).$$
+
+$$\mathbb{E}[S_{n,\alpha}] = n\alpha \quad \mathbb{V}[S_{n,\alpha}] = n\alpha(1-\alpha).$$
+
 3.  A two-sided 95% confidence interval for $S_{n,\alpha}$ when $n$ is large is:
-    $$\left( n\alpha - 1.96\sqrt{n\alpha(1-\alpha)}, n\alpha + 1.96\sqrt{n\alpha(1-\alpha)} \right)$$
+
+$$\left( n\alpha - 1.96\sqrt{n\alpha(1-\alpha)}, n\alpha + 1.96\sqrt{n\alpha(1-\alpha)} \right)$$
 
 
 ---
@@ -398,7 +403,9 @@ How can we test whether a particular VaR methodology is accurate?
 **Traffic Light Zones and Multiplier Adjustment**
 
 Under Basel IV, the capital multiplier $m$ in:
+
 $$MCR_d = \max \{ m \cdot ES_d + ES_d^+ + s_d, MCR_d^* \}$$
+
 is adjusted based on the backtesting performance of the 1% daily VaR of the **entire bank**, i.e. aggregated VaR over all trading trading desks
 
 | Exceptions (out of 250) | Zone   | Multiplier $m$       |
