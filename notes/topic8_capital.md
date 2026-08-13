@@ -267,7 +267,9 @@ Each trading desk contains distinct risk factor categories that contribute to it
 
 
 *   ES is the **expected loss**, given that the loss exceeds the VaR.
+
 $$ ES_{h,\alpha} = -\mathbb{E}[X_h | X_h < -\text{VaR}_{h,\alpha}] $$
+
 *   If $X_h$ is the $h$-day return, then ES and VaR are expressed as %; If $X_h$ is the $h$-day P&L, then ES and VaR are expressed in $ amounts;
 *   In general, ES is found by taking minus **the average of the losses which exceed the VaR** – this is the way it is calculated using historical simulation (or Monte Carlo VaR).
 
