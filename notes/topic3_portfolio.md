@@ -60,23 +60,6 @@ The exponential function $e^x$ is also denoted $\exp(x)$
 
 ---
 
-**Graph Details:**
-- **X-axis**: $x$
-- **Y-axis**: $\exp(x)$
-- **Range**: $x$ ranges from -2.0 to 2.0
-- **Values**: 
-  - At $x = -2.0$: $\exp(-2.0) \approx 0.135$
-  - At $x = -1.5$: $\exp(-1.5) \approx 0.35$
-  - At $x = -1.0$: $\exp(-1.0) \approx 0.7$
-  - At $x = -0.5$: $\exp(-0.5) \approx 1.4$
-  - At $x = 0.0$: $\exp(0.0) \approx 1.6$
-  - At $x = 0.5$: $\exp(0.5) \approx 2.0$
-  - At $x = 1.0$: $\exp(1.0) \approx 2.8$
-  - At $x = 1.5$: $\exp(1.5) \approx 3.6$
-  - At $x = 2.0$: $\exp(2.0) \approx 4.5$
-
----
-
 **Reminder 2**
 
 The natural log function $\ln x$ is the inverse function of $e^x$, meaning:
@@ -85,16 +68,6 @@ $$\ln(e^x) = x \quad \text{and} \quad e^{\ln x} = x$$
 
 and the graph of $\ln x$ is the reflection of $y = e^x$ in the line $y = x$
 
----
-
-**Graph Annotations:**
-- **Blue Line**: $y = e^x$
-- **Red Line**: $\ln(x)$
-- **Green Dashed Line**: $y = x$ (line of symmetry)
-
-**Axes Labels:**
-- **Horizontal Axis**: $x$
-- **Vertical Axis**: $\ln(x)$
 
 ---
 
