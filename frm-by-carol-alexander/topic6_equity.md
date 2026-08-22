@@ -288,27 +288,28 @@ Suppose the volatilities of the small cap and large cap risk factors are 20% and
 
 **(a) What is the 1% 1-day total equity VaR in $ terms?**
 
-*   Dollar betas are $7 \times 2\text{m}$ and $3 \times 1.25\text{m}$, i.e. **$\$14\text{m}$** for small cap and **$\$3.75\text{m}$** for large cap
+*   Dollar betas are $7 \times 2\text{m}$ and $3 \times 1.25\text{m}$, i.e. **$14\text{m}$** for small cap and **$3.75\text{m}$** for large cap
 
-*   Volatilities are 20% and 10% with correlation 0.7, so the portfolio variance in annual terms, in $\$m$ is
+*   Volatilities are 20% and 10% with correlation 0.7, so the portfolio variance in annual terms, in $m$ is
 
 $$ 14^2 \times 0.2^2 + 3.75^2 \times 0.1^2 + 2 \times 14 \times 3.75 \times 0.7 \times 0.2 \times 0.1 = \mathbf{9.450625} $$
 
-*   Hence, the 1-day stdev is $\sqrt{\frac{9.450625}{250}} = \$0.194429\text{m}$, or **$\$194,429$**
+*   Hence, the 1-day stdev is $\sqrt{\frac{9.450625}{250}} = 0.194429\text{m}$, or **$194,429$**
 
 *   Using the normal VaR model, we have a 1% 1-day VaR of
-    $$ 2.32635 \times \$194,429 = \mathbf{\$452,309} $$
+
+$$ 2.32635 \times \$194,429 = \mathbf{\$452,309} $$
 
 
 (b) Find the small cap VaR and the large cap VaR and add them
 
-*   Small cap VaR = $2.32635 \times \$14 \times 0.2 \times \sqrt{\frac{1}{250}} = \$0.411967\text{m}$
-*   Large cap VaR = $2.32635 \times \$3.75 \times 0.1 \times \sqrt{\frac{1}{250}} = \$0.55174\text{m}$
-*   Sum of VaR = $\$411,967 + \$55,174 = \$467,141$
+*   Small cap VaR = $2.32635 \times 14 \times 0.2 \times \sqrt{\frac{1}{250}} = 0.411967\text{m}$
+*   Large cap VaR = $2.32635 \times 3.75 \times 0.1 \times \sqrt{\frac{1}{250}} = 0.55174\text{m}$
+*   Sum of VaR = $411,967 + 55,174 = 467,141$
 
 (c) Why is the sum of equity VaRs greater than total equity VaR?
 
-*   Sum of VaRs = $\$467,141 > \$425,309 = \text{Total Equity VaR}$ because **the portfolio is diversified** i.e. the correlation between small cap and large cap is less than one
+*   Sum of VaRs = $467,141 > 425,309 = \text{Total Equity VaR}$ because **the portfolio is diversified** i.e. the correlation between small cap and large cap is less than one
 
 
 ## 6.4 VaR for International Equity Portfolios
