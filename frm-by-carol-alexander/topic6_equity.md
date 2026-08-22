@@ -140,7 +140,7 @@ $$ 0.25 \times 4 + 0.75 \times 10 = 1 + 7.5 = \mathbf{\$8.5m} $$
 
 - So
 
-  $\text{Equity VaR}_{h,\alpha} = \hat{\beta} \times \text{Market VaR}_{h,\alpha}$
+$$ \text{Equity VaR}_{h,\alpha} = \hat{\beta} \times \text{Market VaR}_{h,\alpha}$$
 
 - If **daily returns** are $X_t \stackrel{i.i.d.}{\sim} N(\mu, \sigma^2)$ then:
 
