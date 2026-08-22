@@ -8,7 +8,7 @@
 #### **Key Formulas**
 *   **Parametric VaR (Normal Distribution)**:  
 
-$$VaR(\alpha\%) = (-\mu_{r} + \sigma_{r} \times Z_{\alpha}) \times P_{t-1}$$ 
+$$ VaR(\alpha\%) = (-\mu_{r} + \sigma_{r} \times Z_{\alpha}) \times P_{t-1} $$ 
 
 * Or for P/L: 
 
