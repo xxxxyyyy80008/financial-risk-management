@@ -231,8 +231,11 @@ $$\text{Equity VaR}_{h,\alpha} = \hat{\beta} \times \text{Market VaR}_{h,\alpha}
 ### **Mapping Equity Portfolios to Risk Factors**
 
 *   Risk factor mapping is based on the **General Linear Model (GLM)**:
-    $$ Y_t = \alpha + \beta_1 X_{1t} + \beta_2 X_{2t} + ...... + \beta_m X_{mt} + \varepsilon_t, $$
-    $$ \varepsilon_t \sim i.i.d (0, \sigma^2), \quad t = 1, ..., T $$
+
+$$ Y_t = \alpha + \beta_1 X_{1t} + \beta_2 X_{2t} + ...... + \beta_m X_{mt} + \varepsilon_t, $$
+
+$$ \varepsilon_t \sim i.i.d (0, \sigma^2), \quad t = 1, ..., T $$
+
     or, in matrix form, $\mathbf{y} = \boldsymbol{\alpha} + \mathbf{X}\boldsymbol{\beta} + \boldsymbol{\varepsilon}$
 
 *   Here $\boldsymbol{\beta} = (\beta_1, ..., \beta_m)'$ are the **sensitivities** to returns on different equity risk factors $\mathbf{X} = (X_{ij})$ for $i = 1, ..., T$ and $j = 1, ...., m$
@@ -245,11 +248,15 @@ $$\text{Equity VaR}_{h,\alpha} = \hat{\beta} \times \text{Market VaR}_{h,\alpha}
 ### **Systematic Variance in the Multi-Factor Model**
 
 *   Estimating the GLM yields our risk factor mapping – which can ignore the constant:
-    $$ \hat{Y}_t = \sum_{i=1}^{m} \hat{\beta}_i X_{it} = \hat{\boldsymbol{\beta}}' \mathbf{x}_t $$
+
+$$ \hat{Y}_t = \sum_{i=1}^{m} \hat{\beta}_i X_{it} = \hat{\boldsymbol{\beta}}' \mathbf{x}_t $$
+
     where $\mathbf{x}_t = (X_{1t}, ...., X_{mt})'$
 
 *   Applying the variance operator we have
-    $$ \mathbb{V}[\hat{Y}] = \sum_{i=1}^{m} \hat{\beta}_i^2 \mathbb{V}[X_i] + 2 \sum_{i=1}^{m} \sum_{j>i}^{m} \hat{\beta}_i \hat{\beta}_j \text{Cov}[X_i, X_j] = \hat{\boldsymbol{\beta}}' \mathbf{V} \hat{\boldsymbol{\beta}} $$
+
+$$ \mathbb{V}[\hat{Y}] = \sum_{i=1}^{m} \hat{\beta}_i^2 \mathbb{V}[X_i] + 2 \sum_{i=1}^{m} \sum_{j>i}^{m} \hat{\beta}_i \hat{\beta}_j \text{Cov}[X_i, X_j] = \hat{\boldsymbol{\beta}}' \mathbf{V} \hat{\boldsymbol{\beta}} $$
+
     where $\mathbf{V}$ denotes the covariance matrix of the risk factor returns
 
 ---
@@ -261,7 +268,8 @@ $$\text{Equity VaR}_{h,\alpha} = \hat{\beta} \times \text{Market VaR}_{h,\alpha}
     *   Risk factor mapping uses weekly returns $\Rightarrow h$-day covariance matrix $= \frac{h}{5}\mathbf{V}$
 
 *   For example, if $Y$ and $X_i$ are **daily returns** and $\mu_h = 0$ we have:
-    $$ \text{Equity VaR}_{h,\alpha} = \Phi^{-1}(1 - \alpha) \sqrt{h\hat{\boldsymbol{\beta}}'\mathbf{V}\hat{\boldsymbol{\beta}}} $$
+
+$$ \text{Equity VaR}_{h,\alpha} = \Phi^{-1}(1 - \alpha) \sqrt{h\hat{\boldsymbol{\beta}}'\mathbf{V}\hat{\boldsymbol{\beta}}} $$
 
 ---
 
@@ -283,7 +291,8 @@ Suppose the volatilities of the small cap and large cap risk factors are 20% and
 *   Dollar betas are $\$7 \times 2\text{m}$ and $\$3 \times 1.25\text{m}$, i.e. **$\$14\text{m}$** for small cap and **$\$3.75\text{m}$** for large cap
 
 *   Volatilities are 20% and 10% with correlation 0.7, so the portfolio variance in annual terms, in $\$m$ is
-    $$ 14^2 \times 0.2^2 + 3.75^2 \times 0.1^2 + 2 \times 14 \times 3.75 \times 0.7 \times 0.2 \times 0.1 = \mathbf{9.450625} $$
+
+$$ 14^2 \times 0.2^2 + 3.75^2 \times 0.1^2 + 2 \times 14 \times 3.75 \times 0.7 \times 0.2 \times 0.1 = \mathbf{9.450625} $$
 
 *   Hence, the 1-day stdev is $\sqrt{\frac{9.450625}{250}} = \$0.194429\text{m}$, or **$\$194,429$**
 
@@ -371,9 +380,13 @@ Currency (or foreign exchange) risk is the uncertainty in the value of an invest
 1.  The risk-factor mapping is $\hat{Y} = 1.5 X_1 + X_2$ where $Y$ is the portfolio return, $X_1$ is the return on the FTSE 100 and $X_2$ is the return on USD/GBP exchange rate
 2.  Using the square-root-of-time rule, the 10-day standard deviations of $X_1$ and $X_2$ are $0.15/5 = 0.03$ and $0.2/5 = 0.04$, respectively
 3.  Hence the systematic 10-day variance is:
-    $$ \mathbb{V}[\hat{Y}] = 1.5^2 \times 0.03^2 + 0.04^2 + 2 \times 1.5 \times 0.3 \times 0.03 \times 0.04 = 0.00471 $$
+
+$$ \mathbb{V}[\hat{Y}] = 1.5^2 \times 0.03^2 + 0.04^2 + 2 \times 1.5 \times 0.3 \times 0.03 \times 0.04 = 0.00471 $$
+
 4.  Since we use percentage betas the 1% 10-day systematic VaR is expressed as a % of the portfolio value – namely
-    $$ 2.3263 \times \sqrt{0.00471} = 15.9571\% $$
+
+$$ 2.3263 \times \sqrt{0.00471} = 15.9571\% $$
+
 5.  The 1% 10-day systematic VaR is $15.9571\% \times \$2m = \mathbf{\$319,142}$
 
 ---
@@ -381,13 +394,18 @@ Currency (or foreign exchange) risk is the uncertainty in the value of an invest
 ### **Equity and FX VaR with Multiple Risk Factors**
 
 *   The risk factor mapping is
-    $$ \hat{Y} = \sum_{i=1}^{n} \hat{\beta}_i X_i = \left( \hat{\beta}_1 X_1 + \dots + \hat{\beta}_m X_m \right) + \left( X_{m+1} + \dots + X_{2m-1} \right) $$
+
+$$ \hat{Y} = \sum_{i=1}^{n} \hat{\beta}_i X_i = \left( \hat{\beta}_1 X_1 + \dots + \hat{\beta}_m X_m \right) + \left( X_{m+1} + \dots + X_{2m-1} \right) $$
+
     where $X_1, ..., X_m$ are returns (or P&L) on $m$ equity indices and (assuming the investor holds domestic stocks) $X_{m+1}, ..., X_{2m-1}$ are the returns (or P&L) on the corresponding $m-1$ FX rates
 
 *   Taking variances yields
-    $$ \mathbb{V}[\hat{Y}] = \hat{\boldsymbol{\beta}}' \mathbf{V} \hat{\boldsymbol{\beta}} $$
+
+$$ \mathbb{V}[\hat{Y}] = \hat{\boldsymbol{\beta}}' \mathbf{V} \hat{\boldsymbol{\beta}} $$
+
     where $\mathbf{V}$ is the covariance matrix of the risk factor returns and
-    $$ \hat{\boldsymbol{\beta}} = \left( \hat{\beta}_1, ..., \hat{\beta}_m, 1, ..., 1 \right)' = \left( \hat{\boldsymbol{\beta}}_{EQ}, \mathbf{1} \right)' $$
+
+$$ \hat{\boldsymbol{\beta}} = \left( \hat{\beta}_1, ..., \hat{\beta}_m, 1, ..., 1 \right)' = \left( \hat{\boldsymbol{\beta}}_{EQ}, \mathbf{1} \right)' $$
 
 
 ---
@@ -440,7 +458,9 @@ where $\mathbf{V}_{EQ}$ and $\mathbf{V}_{FX}$ are the equity and FX portions of 
 *   Disaggregation of **total systematic VaR** allows us to attribute this total to an **equity VaR** component and an **FX VaR** component
 *   We may also attribute total equity VaR and/or total FX VaR to component VaR for different **countries**,
 *   The total VaR takes account of **diversification** which arises because risk factors have correlations less than one, and so
-    $$ \text{Sum of Component VaRs} \ge \text{Total VaR} $$
+
+$$ \text{Sum of Component VaRs} \ge \text{Total VaR} $$
+
     for instance, $\text{Equity VaR} + \text{FX VaR} \ge \text{Total Systematic VaR}$
 *   Similarly, the **sum of equity VaR components** such as US, UK and European equity VaRs is $\ge$ **total equity VaR**
 
@@ -451,7 +471,8 @@ where $\mathbf{V}_{EQ}$ and $\mathbf{V}_{FX}$ are the equity and FX portions of 
 *   Marginal VaR measures how much the total systematic VaR of a portfolio changes **after a small increment in the exposure** to a particular systematic risk factor, holding all other exposures constant – so marginal VaR shows a risk factor’s **incremental** contribution to total systematic risk
 *   Total systematic VaR **is** the sum of marginal VaRs, after weighting each marginal VaR it’s risk factor sensitivity
 *   For instance,
-    $$ \text{Total Equity VaR} = \sum_{i=1}^{m} \beta_i \times \text{Marginal VaR of Equity Factor}_i $$
+
+$$ \text{Total Equity VaR} = \sum_{i=1}^{m} \beta_i \times \text{Marginal VaR of Equity Factor}_i $$
 
 
 
@@ -493,7 +514,8 @@ $$ P^* = \frac{d_2 P_1 + d_1 P_2}{d_1 + d_2} $$
 *   Let $P_1$ be the price of of the September futures and $P_2$ be the price of the October futures
 *   The September futures expires in 22 days and the October futures expires in 50 days
 *   22 is closer to 30 than 50 is, so we need to place more weight on $P_1$ than $P_2$. Under linear interpolation our 30-day futures price will be
-    $$ 22/28 \times P_1 + 8/28 \times P_2 $$
+
+$$ 22/28 \times P_1 + 8/28 \times P_2 $$
 
 ---
 
@@ -505,6 +527,7 @@ $$ P^* = \frac{d_2 P_1 + d_1 P_2}{d_1 + d_2} $$
 ### **Commodity Risk Factors**
 
 Select $n$ vertices of constant maturities as risk factors, with prices
+
 $$ P_{1t}, ... P_{nt} $$
 
 ---
@@ -516,7 +539,9 @@ $$ P_{1t}, ... P_{nt} $$
 *   As we did with cash flows in Topic 5, we now select two vertices with maturities straddling $T_i$, say $T_1 \le T_i \le T_2$
 *   Historical data on $\Delta P_{1t}$ and $\Delta P_{2t}$ gives estimates $\sigma_1^2, \sigma_2^2$ and $\sigma_{12}$
 *   Then we find $p$, with $0 \le p \le 1$ such that
-    $$ \sigma_i^2 = \sigma_1^2 p^2 + \sigma_2^2 (1-p)^2 + 2p(1-p)\sigma_{12} $$
+
+$$ \sigma_i^2 = \sigma_1^2 p^2 + \sigma_2^2 (1-p)^2 + 2p(1-p)\sigma_{12} $$
+
 *   Finally, we map $\$pN_i$ to the vertex at $T_1$ and $\$(1-p)N_i$ to the vertex at $T_2$
 
 ---
@@ -524,13 +549,18 @@ $$ P_{1t}, ... P_{nt} $$
 ### **Calculating VaR – One Underlying**
 
 *   After mapping every position in the portfolio, and including spot positions which do not require mapping, we have a representation
-    $$ \mathbf{p} = (p_0, p_1, p_2, ....p_n)' $$
+
+$$ \mathbf{p} = (p_0, p_1, p_2, ....p_n)' $$
+
     of spot and futures on the same underlying commodity
 *   From historical daily data on $\Delta P_{0t}, \Delta P_{1t}, ..., \Delta P_{nt}$ we:
     *   Estimate the covariance matrix $\mathbf{V}$, then set
-        $$ \text{Normal VaR}_{h,\alpha} = \Phi^{-1}(1-\alpha)\sqrt{h \mathbf{p}' \mathbf{V} \mathbf{p}} $$
+
+$$ \text{Normal VaR}_{h,\alpha} = \Phi^{-1}(1-\alpha)\sqrt{h \mathbf{p}' \mathbf{V} \mathbf{p}} $$
+
     *   Create a time series of historical P&L for the position $\mathbf{p}$ as $(\Delta P_{0t}, \Delta P_{1t}, ..., \Delta P_{nt})\mathbf{p}$ and set:
-        $$ \text{Historical VaR}_{h,\alpha} = -1 \times \sqrt{h} \times \alpha\text{-quantile of this time series} $$
+
+$$ \text{Historical VaR}_{h,\alpha} = -1 \times \sqrt{h} \times \alpha\text{-quantile of this time series} $$
 
 
 ---
