@@ -32,13 +32,16 @@ Equity risk is the uncertainty in the market value of a portfolio due to changes
 
 * Recall that the aim of linear regression is to test the influence of one or more **independent** variables – also referred to as **regressors** or **explanatory variables** – on one particular variable, known as the **dependent** variable, which is usually labelled $Y$
 * With only one risk factor we use the **simple linear model (SLM)**:
-  $$ Y_t = \alpha + \beta X_t + \varepsilon_t \quad \varepsilon_t \sim i.i.d(0, \sigma^2) \quad t=1, \dots, T $$
+
+$$ Y_t = \alpha + \beta X_t + \varepsilon_t \quad \varepsilon_t \sim i.i.d(0, \sigma^2) \quad t=1, \dots, T $$
+
 * The coefficient $\beta$ measures the effect of $X$ on $Y$ – it is the **change in Y per unit change in X** and if $\beta = 0$ then $X$ has no effect on $Y$
    
 ---
 ### **Residuals**
 
 A residual $e_t$ is an observation on the error $\varepsilon_t$. It is the difference between the **actual** and **fitted** values of $y$ at time $t$:
+
 $$ e_t = y_t - \hat{y}_t = y_t - (\hat{\alpha} + \hat{\beta}x_t) $$
 
 where $\hat{\alpha}$ and $\hat{\beta}$ are the **estimated** intercept and slope of the regression line:
@@ -49,9 +52,13 @@ where $\hat{\alpha}$ and $\hat{\beta}$ are the **estimated** intercept and slope
 ### **Ordinary Least Squares (OLS) Estimation**
 
 * Data on $X$ and $Y$ allow one to estimate the model parameters $\hat{\alpha}, \hat{\beta}$ and $\hat{\sigma}$ by minimizing the **residual sum of squares (RSS)** given by
-  $$ RSS = \sum_{t=1}^{T} e_t^2 $$
+
+$$ RSS = \sum_{t=1}^{T} e_t^2 $$
+
 * This gives the OLS formulae:
-  $$ \hat{\alpha} = \bar{y} - \hat{\beta}\bar{x}; \quad \hat{\beta} = \frac{s_{xy}}{s_x^2}; \quad \hat{\sigma} = \sqrt{\frac{RSS}{T-2}} $$
+
+$$ \hat{\alpha} = \bar{y} - \hat{\beta}\bar{x}; \quad \hat{\beta} = \frac{s_{xy}}{s_x^2}; \quad \hat{\sigma} = \sqrt{\frac{RSS}{T-2}} $$
+
 * $\hat{\sigma}$ is the **standard error of the regression** – why do we divide by $T-2$ and not $T-1$?
 
 ---
@@ -59,7 +66,9 @@ where $\hat{\alpha}$ and $\hat{\beta}$ are the **estimated** intercept and slope
 ### **Beta vs Correlation**
 
 * The OLS estimate of the slope of the regression line is related to $r_{xy}$, the correlation between $X$ and $Y$ and to $s_y/s_x$, the **relative volatility** of $Y$ and $X$:
-  $$ \hat{\beta} = \frac{s_{xy}}{s_x^2} = \frac{r_{xy}\hat{s}_x s_y}{s_x^2} = r_{xy} \left( \frac{s_y}{s_x} \right) $$
+
+$$ \hat{\beta} = \frac{s_{xy}}{s_x^2} = \frac{r_{xy}\hat{s}_x s_y}{s_x^2} = r_{xy} \left( \frac{s_y}{s_x} \right) $$
+
 * **Beta** captures the change in $Y$ per unit change in $X$. It has the same sign as the sample correlation
 * But the beta may be greater than 1 or less than $-1$
 
@@ -93,11 +102,14 @@ where $Y_t$ is the return (or P&L) on a **stock**, or a **stock portfolio**, and
 $$ \beta_p = \mathbf{w}'\boldsymbol{\beta} = \sum_{i=1}^n w_i \beta_i $$
   
 * For example, suppose the weights are 0.25 and 0.75 and the % betas are 0.8 and 2. Then the % portfolio beta is
-  $$ 0.25 \times 0.8 + 0.75 \times 2 = 0.2 + 1.5 = 1.7 $$
+
+$$ 0.25 \times 0.8 + 0.75 \times 2 = 0.2 + 1.5 = 1.7 $$
+
   Now suppose the portfolio value is $5m. Then the **nominal** beta is $1.7 \times 5 = \mathbf{\$8.5m}$
 
 * An alternative calculation uses nominal betas of $0.8 \times 5 = \$4$m and $2 \times 5 = \$10$m, then the nominal beta:
-  $$ 0.25 \times 4 + 0.75 \times 10 = 1 + 7.5 = \mathbf{\$8.5m} $$
+
+$$ 0.25 \times 4 + 0.75 \times 10 = 1 + 7.5 = \mathbf{\$8.5m} $$
 
 ## 6.2 VaR with One Equity Risk Factor
 
@@ -151,7 +163,7 @@ $$ \beta_p = \mathbf{w}'\boldsymbol{\beta} = \sum_{i=1}^n w_i \beta_i $$
 
 1. The net portfolio beta is measured in dollar terms as
 
-   $\beta_\$ = \$1m \times 1.2 + \$2m \times 0.8 = \$2.8m$
+   $\beta_\$ = \1m \times 1.2 + \2m \times 0.8 = \2.8m$
 
 2. The 10-day expected excess return on the market index is
 
@@ -165,7 +177,8 @@ $$ \beta_p = \mathbf{w}'\boldsymbol{\beta} = \sum_{i=1}^n w_i \beta_i $$
 
    $\$2.8m \times (2.32635 \times 4\% - 0.2\%) = \$254,951$
 
-   **Note:** You can also use the $\$$ beta $\beta = \frac{1}{3} \times 1.2 + \frac{2}{3} \times 0.8 = 0.93$ to calculate a % VaR then $\times \$3m \Rightarrow$ same dollar VaR as above.
+   **Note:** You can also use the $\beta 
+    $\beta = \frac{1}{3} \times 1.2 + \frac{2}{3} \times 0.8 = 0.93$ to calculate a % VaR then $\times \$3m \Rightarrow$ same dollar VaR as above.
 
 
 ---
