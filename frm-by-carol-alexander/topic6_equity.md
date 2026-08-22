@@ -108,9 +108,10 @@ $$ 0.25 \times 0.8 + 0.75 \times 2 = 0.2 + 1.5 = 1.7 $$
 
   Now suppose the portfolio value is $5m. Then the **nominal** beta is $1.7 \times 5 = \mathbf{\$8.5m}$
 
-* An alternative calculation uses nominal betas of $0.8 \times 5 = \$4$m and $2 \times 5 = \$10$m, then the nominal beta:
+* An alternative calculation uses nominal betas of 0.8 \times 5 = \$4$m and 2 \times 5 = \$10$m, then the nominal beta:
 
 $$ 0.25 \times 4 + 0.75 \times 10 = 1 + 7.5 = \mathbf{\$8.5m} $$
+
 
 ## 6.2 VaR with One Equity Risk Factor
 
