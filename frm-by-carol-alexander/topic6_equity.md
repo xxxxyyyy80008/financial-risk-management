@@ -177,7 +177,7 @@ $$\beta_\$ = 1m \times 1.2 + 2m \times 0.8 = 2.8m$$
 
 3. Hence, the 1% 10-day equity VaR is
 
-   $\2.8m \times (2.32635 \times 4\% - 0.2\%) = \254,951$
+   $2.8m \times (2.32635 \times 4\% - 0.2\%) = \254,951$
 
    **Note:** You can also use the $\beta 
     $\beta = \frac{1}{3} \times 1.2 + \frac{2}{3} \times 0.8 = 0.93$ to calculate a % VaR then $\times \$3m \Rightarrow$ same dollar VaR as above.
