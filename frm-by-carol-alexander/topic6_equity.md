@@ -194,7 +194,7 @@ to calculate a % VaR then $\times 3m \Rightarrow$ same dollar VaR as above.
 
 - For any holding period $h$ and significance level $\alpha$ we again use
 
-  $\text{Equity VaR}_{h,\alpha} = \hat{\beta} \times \text{Market VaR}_{h,\alpha}$
+$$\text{Equity VaR}_{h,\alpha} = \hat{\beta} \times \text{Market VaR}_{h,\alpha}$$
 
 - But now the market VaR is calculated using historical simulation
 
