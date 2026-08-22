@@ -6,9 +6,7 @@
 *   **Standard Error of VaR**: Measures the precision of the VaR estimate. It depends on the probability density function $f(q)$, sample size $n$, and probability level $p$.
 
 #### **Key Formulas**
-*   **Parametric VaR (Normal Distribution)**: 
-
-$$VaR(\alpha\%) = (-\mu_{r} + \sigma_{r} \times Z_{\alpha}) \times P_{t-1}$$ 
+*   **Parametric VaR (Normal Distribution)**:  $$VaR(\alpha\%) = (-\mu_{r} + \sigma_{r} \times Z_{\alpha}) \times P_{t-1}$$ 
 
 * Or for P/L: 
 
