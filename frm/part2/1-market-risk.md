@@ -29,11 +29,10 @@ $VaR = -\mu_{P/L} + \sigma_{P/L}Z_{\alpha}$
 #### **Key Formulas**
 *   **Age-Weighted HS Weight**: 
     $$w_i = \frac{\lambda^{i-1}(1-\lambda)}{1-\lambda^n}$$ 
-    *(Where $\lambda$ is decay factor, $i$ is days ago, $n$ is total days in window)*
+    (Where $\lambda$ is decay factor, $i$ is days ago, $n$ is total days in window)
 *   **Volatility-Adjusted Return**: 
     $$r^*_{t,i} = \left( \frac{\sigma_{T}}{\sigma_{t}} \right) r_{t,i}$$ 
-    *(Adjusts historical returns to reflect current volatility $\sigma_T$)*
-
+    (Adjusts historical returns to reflect current volatility $\sigma_T$)
 ---
 
 ### **Reading 65: Parametric Approaches (II): Extreme Value**
