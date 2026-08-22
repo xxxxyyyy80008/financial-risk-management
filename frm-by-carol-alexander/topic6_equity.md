@@ -165,7 +165,7 @@ $$ \text{Equity VaR}_{h,\alpha} = \hat{\beta} \times \text{Market VaR}_{h,\alpha
 
 1. The net portfolio beta is measured in dollar terms as
 
-$$\beta_ = \1m \times 1.2 + \2m \times 0.8 = \2.8m$$
+$$\beta_\$ = \1m \times 1.2 + \2m \times 0.8 = \2.8m$$
 
 2. The 10-day expected excess return on the market index is
 
