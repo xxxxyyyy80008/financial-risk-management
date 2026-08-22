@@ -151,8 +151,6 @@ $$ \text{Equity VaR}_{h,\alpha} = \hat{\beta} \times \text{Market VaR}_{h,\alpha
   $\mu_h = h\mu \quad \text{and} \quad \sigma_h = \sqrt{h}\sigma$
 
 
-
-
 ### Example: Normal Equity VaR
 
 - A portfolio contains cash positions on two stocks: `$1` million is invested in a stock with a beta of 1.2 and $2 million is invested in a stock with a beta of 0.8, both betas with respect to a broad market index, e.g. the S&P 500
@@ -179,11 +177,11 @@ $$\beta_\$ = 1m \times 1.2 + 2m \times 0.8 = 2.8m$$
 
    $2.8m \times (2.32635 \times 4\% - 0.2\%) = \254,951$
 
-   **Note:** You can also use the $\beta 
+   **Note:** You can also use the $\beta$ 
 
 $$\beta = \frac{1}{3} \times 1.2 + \frac{2}{3} \times 0.8 = 0.93$$ 
 
-to calculate a % VaR then $\times \$3m \Rightarrow$ same dollar VaR as above.
+to calculate a % VaR then $\times 3m \Rightarrow$ same dollar VaR as above.
 
 
 ---
