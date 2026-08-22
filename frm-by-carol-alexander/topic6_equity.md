@@ -236,7 +236,7 @@ $$ Y_t = \alpha + \beta_1 X_{1t} + \beta_2 X_{2t} + ...... + \beta_m X_{mt} + \v
 
 $$ \varepsilon_t \sim i.i.d (0, \sigma^2), \quad t = 1, ..., T $$
 
-    or, in matrix form, $\mathbf{y} = \boldsymbol{\alpha} + \mathbf{X}\boldsymbol{\beta} + \boldsymbol{\varepsilon}$
+or, in matrix form, $\mathbf{y} = \boldsymbol{\alpha} + \mathbf{X}\boldsymbol{\beta} + \boldsymbol{\varepsilon}$
 
 *   Here $\boldsymbol{\beta} = (\beta_1, ..., \beta_m)'$ are the **sensitivities** to returns on different equity risk factors $\mathbf{X} = (X_{ij})$ for $i = 1, ..., T$ and $j = 1, ...., m$
 
@@ -251,13 +251,13 @@ $$ \varepsilon_t \sim i.i.d (0, \sigma^2), \quad t = 1, ..., T $$
 
 $$ \hat{Y}_t = \sum_{i=1}^{m} \hat{\beta}_i X_{it} = \hat{\boldsymbol{\beta}}' \mathbf{x}_t $$
 
-    where $\mathbf{x}_t = (X_{1t}, ...., X_{mt})'$
+where $\mathbf{x}_t = (X_{1t}, ...., X_{mt})'$
 
 *   Applying the variance operator we have
 
 $$ \mathbb{V}[\hat{Y}] = \sum_{i=1}^{m} \hat{\beta}_i^2 \mathbb{V}[X_i] + 2 \sum_{i=1}^{m} \sum_{j>i}^{m} \hat{\beta}_i \hat{\beta}_j \text{Cov}[X_i, X_j] = \hat{\boldsymbol{\beta}}' \mathbf{V} \hat{\boldsymbol{\beta}} $$
 
-    where $\mathbf{V}$ denotes the covariance matrix of the risk factor returns
+where $\mathbf{V}$ denotes the covariance matrix of the risk factor returns
 
 ---
 
