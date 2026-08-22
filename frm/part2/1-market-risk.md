@@ -178,6 +178,7 @@ $VaR = -\mu_{P/L} + \sigma_{P/L}Z_{\alpha}$
 *   **Vasicek Model Dynamics**: 
     $$dr = k(\theta - r)dt + \sigma dw$$ 
     *(Where $$\theta = r_{\infty} + \frac{\lambda}{k}$$ is the risk-neutral long-term mean)*
+    $$\theta = r_{\infty} + \frac{\lambda}{k}$$ 
 *   **Half-Life of Mean Reversion**: 
     $$\text{Half-Life} = \frac{\ln(2)}{k}$$
 *   **Expected Short Rate after $T$ years (Vasicek)**: 
