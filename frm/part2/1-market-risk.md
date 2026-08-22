@@ -34,8 +34,8 @@ $VaR = -\mu_{P/L} + \sigma_{P/L}Z_{\alpha}$
     $$r^*_{t,i} = \left( \frac{\sigma_{T}}{\sigma_{t}} \right) r_{t,i}$$ 
     (Adjusts historical returns to reflect current volatility $\sigma_T$)
 
-    $$r^*_{t,i} = \left( \frac{\sigma_{T}}{\sigma_{t}} \right) r_{t,i}$$ 
-    
+$$r^*_{t,i} = \left( \frac{\sigma_{T}}{\sigma_{t}} \right) r_{t,i}$$ 
+
 ---
 
 ### **Reading 65: Parametric Approaches (II): Extreme Value**
