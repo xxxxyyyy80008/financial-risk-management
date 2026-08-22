@@ -8,21 +8,15 @@
 #### **Key Formulas**
 *   **Parametric VaR (Normal Distribution)**:  
 
-$$VaR(\alpha\%) = (-\mu_{r} + \sigma_{r} \times Z_{\alpha}) \times P_{t-1}$$ 
+$$VaR(\alpha) = (-\mu_{r} + \sigma_{r} \times Z_{\alpha}) \times P_{t-1}$$ 
 
-* Or for P/L: 
-
-$VaR = -\mu_{P/L} + \sigma_{P/L}Z_{\alpha}$
+    Or for P/L:  $VaR = -\mu_{P/L} + \sigma_{P/L}Z_{\alpha}$
 
 *   **Lognormal VaR**: 
     $$VaR = P \times (1 - e^{\mu - \sigma Z_{\alpha}})$$
 *   **Standard Error of a Quantile (VaR)**: 
     $$se(q) = \frac{\sqrt{p(1-p)/n}}{f(q)}$$
 
-
-$$
-VaR(\alpha\%) = (-\mu_{r} + \sigma_{r} \times Z_{\alpha}) \times P\_{t-1}
-$$
 ---
 
 ### **Reading 64: Non-parametric Approaches**
