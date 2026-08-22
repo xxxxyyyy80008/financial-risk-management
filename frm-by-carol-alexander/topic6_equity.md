@@ -418,6 +418,7 @@ $$ \hat{\boldsymbol{\beta}} = \left( \hat{\beta}_1, ..., \hat{\beta}_m, 1, ..., 
 Partition the large risk factor covariance matrix into four as:
 
 ![alt text](images/6_decomp.png)
+<img src="images/6_decomp.png" width="300">
 
 where:
 *   $\mathbf{V}_{EQ}$ is the $m \times m$ covariance matrix of equity risk factor returns
