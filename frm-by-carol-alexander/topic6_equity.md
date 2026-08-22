@@ -251,7 +251,9 @@ or, in matrix form, $\mathbf{y} = \boldsymbol{\alpha} + \mathbf{X}\boldsymbol{\b
 
 $$ \hat{Y}_t = \sum_{i=1}^{m} \hat{\beta}_i X_{it} = \hat{\boldsymbol{\beta}}' \mathbf{x}_t $$
 
-where $\mathbf{x}_t = (X_{1t}, ...., X_{mt})'$
+where 
+
+$$\mathbf{x}_t = (X_{1t}, ...., X_{mt})'$$
 
 *   Applying the variance operator we have
 
