@@ -1,9 +1,11 @@
 # Financial Risk Management
 
-## Overview
-Study notes on Financial Risk Management by Professor Carol Alexander. 
+Study notes on Financial Risk Management
+
 
 ## Table of Contents
+*Notes on "Financial Risk Management" Course by Professor Carol Alexander.*
+
 1. [Introduction to Financial Risk Management](notes/topic1_intro.md)
 2. [Credit Risk Management](notes/topic2_credit.md%20)
 3. [Portfolio Returns and their Distributions](notes/topic3_portfolio.md)
@@ -72,6 +74,15 @@ Topic 8: Capital Reserves for Market Risk
     5. Statistical Backtests
     6. Scenario Analysis and Stress Testing Portfolios
 ```
+
+
+*Notes for FRM Part 2 Exam*
+
+1. [Market Risk](frm/part2/1-market-risk.md)
+2. [Credit Risk](frm/part2/2-credit-risk.md)
+3. [Operational Risk](frm/part2/3-operational-risk.md)
+4. [Liquidity Risk](frm/part2/4-liquidity-risk.md)
+5. [Investment Risk](frm/part2/5-investment-risk.md)
 
 ## Python Implementations
 
