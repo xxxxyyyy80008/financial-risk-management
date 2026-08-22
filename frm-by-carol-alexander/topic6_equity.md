@@ -78,6 +78,7 @@ $$ \hat{\beta} = \frac{s_{xy}}{s_x^2} = \frac{r_{xy}\hat{s}_x s_y}{s_x^2} = r_{x
 ### **Single Index Model (SIM)**
 
 The SIM is a simple linear regression
+
 $$ Y_t = \alpha + \beta X_t + \varepsilon_t $$
 
 where $Y_t$ is the return (or P&L) on a **stock**, or a **stock portfolio**, and $X_t$ is the return (or P&L) on an **equity market index**
