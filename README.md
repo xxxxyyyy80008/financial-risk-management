@@ -6,15 +6,15 @@ Study notes on Financial Risk Management
 ## Table of Contents
 *Notes on "Financial Risk Management" Course by Professor Carol Alexander.*
 
-1. [Introduction to Financial Risk Management](notes/topic1_intro.md)
-2. [Credit Risk Management](notes/topic2_credit.md)
-3. [Portfolio Returns and their Distributions](notes/topic3_portfolio.md)
-4. [Volatility and Value-at-Risk](notes/topic4_var.md)
-5. [Fixed Income Portfolios](notes/topic5_fixed_income.md)
-6. [International Equity and Commodity Portfolios](notes/topic6_equity.md)
-7. [Risk Management for Options Portfolios](notes/topic7_options.md)
-8. [Capital Reserves for Market Risk](notes/topic8_capital.md)
-9. [Math Foundations](notes/math_basic.md)
+1. [Introduction to Financial Risk Management](frm-by-carol-alexander/topic1_intro.md)
+2. [Credit Risk Management](frm-by-carol-alexander/topic2_credit.md)
+3. [Portfolio Returns and their Distributions](frm-by-carol-alexander/topic3_portfolio.md)
+4. [Volatility and Value-at-Risk](frm-by-carol-alexander/topic4_var.md)
+5. [Fixed Income Portfolios](frm-by-carol-alexander/topic5_fixed_income.md)
+6. [International Equity and Commodity Portfolios](frm-by-carol-alexander/topic6_equity.md)
+7. [Risk Management for Options Portfolios](frm-by-carol-alexander/topic7_options.md)
+8. [Capital Reserves for Market Risk](frm-by-carol-alexander/topic8_capital.md)
+9. [Math Foundations](frm-by-carol-alexander/math_basic.md)
 
 ```text
 Topic 1: Introduction to Financial Risk Management
