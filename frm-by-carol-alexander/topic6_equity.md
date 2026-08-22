@@ -415,7 +415,7 @@ $$ \hat{\boldsymbol{\beta}} = \left( \hat{\beta}_1, ..., \hat{\beta}_m, 1, ..., 
 
 Partition the large risk factor covariance matrix into four as:
 
-$$ \mathbf{V} = \left[ \begin{array}{c|c} \mathbf{V}_{EQ} & \mathbf{V}_{EQ-FX} \\ \hline \mathbf{V}_{FX-EQ} & \mathbf{V}_{FX} \end{array} \right] $$
+![alt text](images/6_decomp.png)
 
 where:
 *   $\mathbf{V}_{EQ}$ is the $m \times m$ covariance matrix of equity risk factor returns
@@ -507,6 +507,7 @@ Commodity risk is the uncertainty in the market value of a portfolio due to chan
 
 $$ P^* = \frac{d_2 P_1 + d_1 P_2}{d_1 + d_2} $$
 
+![alt text](images/6_linear_interp.png)
 ---
 
 ### **Linear Interpolation for Constant Maturity Futures Prices**
@@ -523,6 +524,7 @@ $$ 22/28 \times P_1 + 8/28 \times P_2 $$
 
 ### **Commodity Futures Term Structures**
 
+![alt text](images/6_cmd_term_structure.png)
 
 ---
 
@@ -531,6 +533,8 @@ $$ 22/28 \times P_1 + 8/28 \times P_2 $$
 Select $n$ vertices of constant maturities as risk factors, with prices
 
 $$ P_{1t}, ... P_{nt} $$
+
+![alt text](images/6_cmd_risk_factor.png)
 
 ---
 
