@@ -288,7 +288,7 @@ Suppose the volatilities of the small cap and large cap risk factors are 20% and
 
 **(a) What is the 1% 1-day total equity VaR in $ terms?**
 
-*   Dollar betas are $\$7 \times 2\text{m}$ and $\$3 \times 1.25\text{m}$, i.e. **$\$14\text{m}$** for small cap and **$\$3.75\text{m}$** for large cap
+*   Dollar betas are $7 \times 2\text{m}$ and $3 \times 1.25\text{m}$, i.e. **$\$14\text{m}$** for small cap and **$\$3.75\text{m}$** for large cap
 
 *   Volatilities are 20% and 10% with correlation 0.7, so the portfolio variance in annual terms, in $\$m$ is
 
