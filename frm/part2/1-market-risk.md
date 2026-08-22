@@ -63,7 +63,7 @@ $VaR = -\mu_{P/L} + \sigma_{P/L}Z_{\alpha}$
 #### **Key Formulas**
 *   **Binomial Test Statistic (for exceptions)**: 
     $$Z = \frac{x - pT}{\sqrt{p(1-p)T}}$$ 
-    *(Where $x$ = observed exceptions, $p$ = VaR significance level, $T$ = number of days)*
+    (Where $x$ = observed exceptions, $p$ = VaR significance level, $T$ = number of days)
 
 ---
 
