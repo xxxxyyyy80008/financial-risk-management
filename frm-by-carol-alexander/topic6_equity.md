@@ -354,7 +354,7 @@ Currency (or foreign exchange) risk is the uncertainty in the value of an invest
 
 ### **Illustration**
 
-*   Suppose the USD/GBP FX rate is 1 USD = 0.8 GBP when a fund invests £5m, which is $\$5/0.8 = \$6.25\text{m}$ in US stocks
+*   Suppose the USD/GBP FX rate is 1 USD = 0.8 GBP when a fund invests £5m, which is $5/0.8 = 6.25\text{m}$ in US stocks
 *   Now suppose USD strengthens by 12.5% so that 1 USD is now equivalent to $0.8 \times 1.125 = 0.9$ GBP
 *   Even if the fund hadn't yet bought the stocks it makes a 12.5% return just from the change in the FX rate, because the £5m now converts back to $6.25 \times 0.9 = \text{£}5.625\text{m}$ and $(5.625 - 5)/5 = 12.5\%$
 *   So the 12.5% increase in USD vs GBP translates into a 12.5% return, regardless of any stock price movements
@@ -388,7 +388,7 @@ $$ \mathbb{V}[\hat{Y}] = 1.5^2 \times 0.03^2 + 0.04^2 + 2 \times 1.5 \times 0.3 
 
 $$ 2.3263 \times \sqrt{0.00471} = 15.9571\% $$
 
-5.  The 1% 10-day systematic VaR is $15.9571\% \times \$2m = \mathbf{\$319,142}$
+5.  The 1% 10-day systematic VaR is $15.9571\% \times 2m = \mathbf{319,142}$
 
 ---
 
@@ -398,13 +398,13 @@ $$ 2.3263 \times \sqrt{0.00471} = 15.9571\% $$
 
 $$ \hat{Y} = \sum_{i=1}^{n} \hat{\beta}_i X_i = \left( \hat{\beta}_1 X_1 + \dots + \hat{\beta}_m X_m \right) + \left( X_{m+1} + \dots + X_{2m-1} \right) $$
 
-    where $X_1, ..., X_m$ are returns (or P&L) on $m$ equity indices and (assuming the investor holds domestic stocks) $X_{m+1}, ..., X_{2m-1}$ are the returns (or P&L) on the corresponding $m-1$ FX rates
+where $X_1, ..., X_m$ are returns (or P&L) on $m$ equity indices and (assuming the investor holds domestic stocks) $X_{m+1}, ..., X_{2m-1}$ are the returns (or P&L) on the corresponding $m-1$ FX rates
 
 *   Taking variances yields
 
 $$ \mathbb{V}[\hat{Y}] = \hat{\boldsymbol{\beta}}' \mathbf{V} \hat{\boldsymbol{\beta}} $$
 
-    where $\mathbf{V}$ is the covariance matrix of the risk factor returns and
+where $\mathbf{V}$ is the covariance matrix of the risk factor returns and
 
 $$ \hat{\boldsymbol{\beta}} = \left( \hat{\beta}_1, ..., \hat{\beta}_m, 1, ..., 1 \right)' = \left( \hat{\boldsymbol{\beta}}_{EQ}, \mathbf{1} \right)' $$
 
@@ -462,7 +462,8 @@ where $\mathbf{V}_{EQ}$ and $\mathbf{V}_{FX}$ are the equity and FX portions of 
 
 $$ \text{Sum of Component VaRs} \ge \text{Total VaR} $$
 
-    for instance, $\text{Equity VaR} + \text{FX VaR} \ge \text{Total Systematic VaR}$
+for instance, $\text{Equity VaR} + \text{FX VaR} \ge \text{Total Systematic VaR}$
+
 *   Similarly, the **sum of equity VaR components** such as US, UK and European equity VaRs is $\ge$ **total equity VaR**
 
 
@@ -553,13 +554,13 @@ $$ \sigma_i^2 = \sigma_1^2 p^2 + \sigma_2^2 (1-p)^2 + 2p(1-p)\sigma_{12} $$
 
 $$ \mathbf{p} = (p_0, p_1, p_2, ....p_n)' $$
 
-    of spot and futures on the same underlying commodity
+of spot and futures on the same underlying commodity
 *   From historical daily data on $\Delta P_{0t}, \Delta P_{1t}, ..., \Delta P_{nt}$ we:
     *   Estimate the covariance matrix $\mathbf{V}$, then set
 
 $$ \text{Normal VaR}_{h,\alpha} = \Phi^{-1}(1-\alpha)\sqrt{h \mathbf{p}' \mathbf{V} \mathbf{p}} $$
 
-    *   Create a time series of historical P&L for the position $\mathbf{p}$ as $(\Delta P_{0t}, \Delta P_{1t}, ..., \Delta P_{nt})\mathbf{p}$ and set:
+*   Create a time series of historical P&L for the position $\mathbf{p}$ as $(\Delta P_{0t}, \Delta P_{1t}, ..., \Delta P_{nt})\mathbf{p}$ and set:
 
 $$ \text{Historical VaR}_{h,\alpha} = -1 \times \sqrt{h} \times \alpha\text{-quantile of this time series} $$
 
