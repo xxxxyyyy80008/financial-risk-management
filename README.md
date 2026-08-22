@@ -84,8 +84,4 @@ Topic 8: Capital Reserves for Market Risk
 4. [Liquidity Risk](frm/part2/4-liquidity-risk.md)
 5. [Investment Risk](frm/part2/5-investment-risk.md)
 
-## Python Implementations
-
-
-## Graphs
 
