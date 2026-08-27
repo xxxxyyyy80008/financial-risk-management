@@ -63,13 +63,10 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 ### **Forward Rate Agreement (FRA)**
 
+<img src="images/2_1.png" alt="" width="300" height="200">
+<img src="images/2_2.png" alt="" width="300" height="200">
 
-- **Diagram:**
-    - **Box A:** A pays fixed, A receives floating
-    - **Box B:** B receives fixed, B pays floating
-    - **Arrow between boxes:** R%, €100m nominal
-    - **Settlement date:** $f_{t_1,t_2}$ observed
-    - **Single payment (PV):** $(R - f_{t_1,t_2}) N (1 + f_{t_1,t_2})^{-1}$
+
 - **Timeline:**
     - Contract signed: $t_0$ ($R$, $N$ fixed)
     - Settlement date: $t_1$
