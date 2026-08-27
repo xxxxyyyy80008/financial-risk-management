@@ -195,6 +195,4 @@ This is $\mathbf{p}$, the vector of PV01 cash flow sensitivities, after mapping 
 
 - Finally we use the square root of time rule to obtain the 1% 10-day historical VaR:
 
-  $$
-  \text{VaR}_{10,1\%} = -q_{1\%} \times \sqrt{10} = 1,962,959 \text{ GBP}
-  $$
+$$\text{VaR}_{10,1\%} = -q_{1\%} \times \sqrt{10} = 1,962,959 \text{ GBP}$$
