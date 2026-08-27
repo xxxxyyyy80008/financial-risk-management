@@ -232,19 +232,19 @@ Title: $\Phi$ distribution function
 - Transpose is denoted by the $ T $ superscript or a ‘prime’ symbol $ ' $
 - **Example**
 
-$$
+```math
 \begin{pmatrix} 3 & 12 & 9 & 29 \\ 2 & 18 & 4 & 61 \end{pmatrix}'
 =
 \begin{pmatrix} 3 & 2 \\ 12 & 18 \\ 9 & 4 \\ 29 & 61 \end{pmatrix}
-$$
+```
 
 - The transpose of a column vector is a row vector:
 
-$$
+```math
 \begin{pmatrix} 2 \\ 8 \\ 1 \end{pmatrix}'
 =
 (2 \quad 8 \quad 1)
-$$
+```
 
 ---
 
@@ -253,13 +253,13 @@ $$
 - Matrices can **only** be added and subtracted if each matrix has the **same dimension**
 - So if $ \mathbf{X} = (x_{ij}) $ and $ \mathbf{Y} = (y_{ij}) $ are both $ r \times c $ matrices then
 
-$$
+```math
 \mathbf{X} + \mathbf{Y} = (x_{ij} + y_{ij}) \quad \text{and} \quad \mathbf{X} - \mathbf{Y} = (x_{ij} - y_{ij})
-$$
+```
 
 **Example:**
 
-$$
+```math
 \begin{pmatrix} 3 & 4 & 2 \\ 0 & 6 & 5 \end{pmatrix}
 +
 \begin{pmatrix} 2 & -2 & 3 \\ 5 & 5 & 1 \end{pmatrix}
@@ -267,7 +267,7 @@ $$
 \begin{pmatrix} (3+2) & (4-2) & (2+3) \\ (0+5) & (6+5) & (5+1) \end{pmatrix}
 =
 \begin{pmatrix} 5 & 2 & 5 \\ 5 & 11 & 6 \end{pmatrix}
-$$
+```
 
 
 ---
@@ -276,19 +276,19 @@ $$
 
 - Let $ \mathbf{X} = (x_{ij}) $ and $ c $ be any number (i.e. a scalar). Then
 
-$$
+```math
 c\mathbf{X} = (cx_{ij})
-$$
+```
 
 **Example:**
 
-$$
+```math
 \mathbf{X} = \begin{pmatrix} 8 & 6 \\ 3 & 2 \end{pmatrix}
 \Rightarrow
 2\mathbf{X} = 2 \begin{pmatrix} 8 & 6 \\ 3 & 2 \end{pmatrix}
 =
 \begin{pmatrix} 16 & 12 \\ 6 & 4 \end{pmatrix}
-$$
+```
 
 
 ---
@@ -298,11 +298,11 @@ $$
 - The **dot product** $ \mathbf{x} \cdot \mathbf{y} $ only exists for two row or column vectors $ \mathbf{x} $ and $ \mathbf{y} $ of the **same dimension**
 - It works by multiplying elements in the same position then adding. For instance:
 
-$$
+```math
 \begin{pmatrix} 1 \\ 2 \\ 0 \\ -1 \end{pmatrix} \cdot
 \begin{pmatrix} 2 \\ 3 \\ 7 \\ 5 \end{pmatrix}
 = 2 + 6 + 0 - 5 = 3
-$$
+```
 
 - Next we do matrix multiplication, which shows that $ \mathbf{x} \cdot \mathbf{y} = \mathbf{x}'\mathbf{y} $ for two column vectors and $ \mathbf{x} \cdot \mathbf{y} = \mathbf{x}\mathbf{y}' $ for two row vectors
 
@@ -321,12 +321,12 @@ $$
 
 ### **Example of Matrix Multiplication**
 
-$$
+```math
 \begin{pmatrix} 6 & 2 & 1 \\ 8 & 9 & 4 \end{pmatrix}
 \begin{pmatrix} 2 & 8 & 4 & 0 \\ 3 & 4 & 2 & 3 \\ 1 & 6 & 3 & 0 \end{pmatrix}
 =
 \begin{pmatrix} 19 & 62 & 31 & 6 \\ 47 & 124 & 62 & 27 \end{pmatrix}
-$$
+```
 
 - For instance: $ 124 = 8 \times 8 + 9 \times 4 + 4 \times 6 $
 - Note that $ \mathbf{XY} \neq \mathbf{YX} $ except for some special matrices
@@ -551,11 +551,15 @@ For random variables *X* and *Y* and constants *a* and *b*:
 - Our formula for the variance $\sigma_p^2$ of a portfolio $p$ uses the portfolio weights $w_i$ on the assets in the portfolio and the standard deviations $\sigma_i$ and correlations $\rho_{ij}$ (or covariances, $\sigma_{ij}$) of the asset’s returns
 - If there are $n$ assets in the portfolio then:
 
-$$\sigma_p^2 = \sum_{i=1}^n w_i^2 \sigma_i^2 + 2 \sum_{i=1}^n \sum_{j > i} w_i w_j \sigma_{ij}$$
+```math
+\sigma_p^2 = \sum_{i=1}^n w_i^2 \sigma_i^2 + 2 \sum_{i=1}^n \sum_{j > i} w_i w_j \sigma_{ij}
+```
 
 - But $\sigma_{ij} = \rho_{ij} \sigma_i \sigma_j$ so we also have:
 
-$$\sigma_p^2 = \sum_{i=1}^n w_i^2 \sigma_i^2 + 2 \sum_{i=1}^n \sum_{j > i} w_i w_j \rho_{ij} \sigma_i \sigma_j$$
+```math
+\sigma_p^2 = \sum_{i=1}^n w_i^2 \sigma_i^2 + 2 \sum_{i=1}^n \sum_{j > i} w_i w_j \rho_{ij} \sigma_i \sigma_j
+```
 
 
 
@@ -567,7 +571,9 @@ $$\sigma_p^2 = \sum_{i=1}^n w_i^2 \sigma_i^2 + 2 \sum_{i=1}^n \sum_{j > i} w_i w
 - Find the volatility of a portfolio with $2m invested in asset 1 and $3m invested in asset 2
 - **Solution:** The weights are $w_1 = \frac{2}{2+3} = 0.4$ and $w_2 = \frac{3}{2+3} = 0.6$ so
 
-  $$\sigma_p^2 = 0.4^2 \times 0.2^2 + 0.6^2 \times 0.25^2 + 2 \times 0.4 \times 0.6 \times 0.4 \times 0.2 \times 0.25$$
+```math
+\sigma_p^2 = 0.4^2 \times 0.2^2 + 0.6^2 \times 0.25^2 + 2 \times 0.4 \times 0.6 \times 0.4 \times 0.2 \times 0.25
+```
 
   That is, $\sigma_p^2 = 0.0064 + 0.0225 + 0.0096 = 0.0385$.
 
@@ -595,11 +601,15 @@ $$\sigma_p^2 = \sum_{i=1}^n w_i^2 \sigma_i^2 + 2 \sum_{i=1}^n \sum_{j > i} w_i w
 - Then $\mathbf{w}'\mathbf{V}\mathbf{w}$ is the variance of the portfolio return. Being a variance, it must always be positive, for **any** weights – even if some are negative
 - For instance, if $\mathbf{V} = \begin{pmatrix} 0.1 & 0.2 \\ 0.2 & 0.15 \end{pmatrix}$ and $\mathbf{w} = (w_1, w_2)'$ then
 
-  $$\mathbf{w}'\mathbf{V}\mathbf{w} = 0.1w_1^2 + 0.4w_1w_2 + 0.15w_2^2$$
+```math
+\mathbf{w}'\mathbf{V}\mathbf{w} = 0.1w_1^2 + 0.4w_1w_2 + 0.15w_2^2
+```
 
 - So if $w_1 = 0.3$ and $w_2 = 0.7$ then
 
-  $$\mathbf{w}'\mathbf{V}\mathbf{w} = 0.1 \times 0.3^2 + 0.4 \times 0.3 \times 0.7 + 0.15 \times 0.7^2 = 0.1665$$
+```math
+\mathbf{w}'\mathbf{V}\mathbf{w} = 0.1 \times 0.3^2 + 0.4 \times 0.3 \times 0.7 + 0.15 \times 0.7^2 = 0.1665
+```
 
 
 
@@ -609,11 +619,15 @@ $$\sigma_p^2 = \sum_{i=1}^n w_i^2 \sigma_i^2 + 2 \sum_{i=1}^n \sum_{j > i} w_i w
 
 We already have notation for the portfolio weights $\mathbf{w} = (w_1, \dots, w_n)'$ and asset returns $\mathbf{r} = (r_1, \dots, r_n)'$. Now we need another notation to summarize the variances $\sigma_i^2$ and covariances $\sigma_{ij}$ which is called the **covariance matrix** of the asset returns:
 
-$$\mathbf{V} = \begin{pmatrix} \sigma_1^2 & \sigma_{12} & \dots & \sigma_{1n} \\ \sigma_{21} & \sigma_2^2 & \dots & \sigma_{2n} \\ \dots & \dots & \dots & \dots \\ \sigma_{n1} & \sigma_{n2} & \dots & \sigma_n^2 \end{pmatrix}$$
+```math
+\mathbf{V} = \begin{pmatrix} \sigma_1^2 & \sigma_{12} & \dots & \sigma_{1n} \\ \sigma_{21} & \sigma_2^2 & \dots & \sigma_{2n} \\ \dots & \dots & \dots & \dots \\ \sigma_{n1} & \sigma_{n2} & \dots & \sigma_n^2 \end{pmatrix}
+```
 
 Now, using matrix multiplication it can be shown that
 
-$$\sigma_p^2 = \sum_{i=1}^n w_i^2 \sigma_i^2 + 2 \sum_{i=1}^n \sum_{j > i} w_i w_j \sigma_{ij} = \mathbf{w}'\mathbf{V}\mathbf{w}$$
+```math
+\sigma_p^2 = \sum_{i=1}^n w_i^2 \sigma_i^2 + 2 \sum_{i=1}^n \sum_{j > i} w_i w_j \sigma_{ij} = \mathbf{w}'\mathbf{V}\mathbf{w}
+```
 
 
 ---
@@ -622,11 +636,15 @@ $$\sigma_p^2 = \sum_{i=1}^n w_i^2 \sigma_i^2 + 2 \sum_{i=1}^n \sum_{j > i} w_i w
 
 - Asset 1 has volatility 20% and asset 2 has volatility 25% and their returns have correlation 0.4. Find the volatility of a portfolio with `$2m` invested in asset 1 and `$3m` invested in asset 2
 
-$$\mathbf{V} = \begin{pmatrix} 0.2^2 & 0.4 \times 0.2 \times 0.25 \\ 0.4 \times 0.2 \times 0.25 & 0.25^2 \end{pmatrix} = \begin{pmatrix} 0.04 & 0.02 \\ 0.02 & 0.0625 \end{pmatrix}$$
+```math
+\mathbf{V} = \begin{pmatrix} 0.2^2 & 0.4 \times 0.2 \times 0.25 \\ 0.4 \times 0.2 \times 0.25 & 0.25^2 \end{pmatrix} = \begin{pmatrix} 0.04 & 0.02 \\ 0.02 & 0.0625 \end{pmatrix}
+```
 
 The weights are $\mathbf{w} = (0.4, 0.6)'$ so
 
-$$\sigma_p^2 = \mathbf{w}'\mathbf{V}\mathbf{w} = (0.4, 0.6) \begin{pmatrix} 0.04 & 0.02 \\ 0.02 & 0.0625 \end{pmatrix} \begin{pmatrix} 0.4 \\ 0.6 \end{pmatrix}$$
+```math
+\sigma_p^2 = \mathbf{w}'\mathbf{V}\mathbf{w} = (0.4, 0.6) \begin{pmatrix} 0.04 & 0.02 \\ 0.02 & 0.0625 \end{pmatrix} \begin{pmatrix} 0.4 \\ 0.6 \end{pmatrix}
+```
 
 This gives, $\sigma_p^2 = 0.0385$ so the volatility is
 
