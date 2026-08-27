@@ -206,7 +206,7 @@ $\Phi$ distribution function
 
 - A matrix is a rectangular array of numbers. It is denoted by a bold capital letter, such as 
 ```math
- \mathbf{X}, \mathbf{Y}, \mathbf{A} $ or $ \mathbf{B} 
+ \mathbf{X}, \mathbf{Y}, \mathbf{A} or \mathbf{B} 
  ```
 - Its **dimension** is the number of rows and the number of columns. This is written as $ r \times c $.
 - For example, 
