@@ -34,9 +34,9 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 - The **present value of a basis point** move, PV01, of $c_i$ is the sensitivity of $c_i$ to a 1 bp increase in $r_i$:
 
-  $$
-  \text{PV01}_i = c_i \left( (1 + r_i + 0.01\%)^{-t_i} - (1 + r_i)^{-t_i} \right)
-  $$
+$$
+\text{PV01}_i = c_i \left( (1 + r_i + 0.01\%)^{-t_i} - (1 + r_i)^{-t_i} \right)
+$$
 
 - Example: What is the PV01 of cash flow of $5m in 2 years time when the 2-year interest rate is 4% ?
 
@@ -195,4 +195,6 @@ This is $\mathbf{p}$, the vector of PV01 cash flow sensitivities, after mapping 
 
 - Finally we use the square root of time rule to obtain the 1% 10-day historical VaR:
 
-$$\text{VaR}_{10,1\%} = -q_{1\%} \times \sqrt{10} = 1,962,959 \text{ GBP}$$
+  $$
+  \text{VaR}_{10,1\%} = -q_{1\%} \times \sqrt{10} = 1,962,959 \text{ GBP}
+  $$
