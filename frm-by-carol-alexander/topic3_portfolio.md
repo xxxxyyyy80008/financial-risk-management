@@ -711,7 +711,9 @@ See **Portfolio Calculations** in the Excel workbook for Topic 3
 
 - **Method (1):** Apply the current portfolio weights to the asset returns on each day in time series:
 
-  $$r_{pt} = \mathbf{w}'\mathbf{r}_t = \sum_{i=1}^n w_i r_{it}, \quad t = 1, \dots, T$$
+```math
+r_{pt} = \mathbf{w}'\mathbf{r}_t = \sum_{i=1}^n w_i r_{it}, \quad t = 1, \dots, T
+```
 
 - This gives a time series of $T$ observations on the portfolio return
 - Then we calculate the standard deviation of the portfolio returns and annualise it to obtain the portfolio volatility
