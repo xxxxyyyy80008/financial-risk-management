@@ -105,7 +105,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 ** Cash Flows to the Lender of a 5-Year Loan with 10% Interest (Interest + Principal)
 
-<img src="images/2_3.png" alt="" width="380" >
+<img src="images/2_3.png" alt="" width="500" >
 
         - Year 1: ~$260 (Principal + Interest)
         - Year 2: ~$270 (Principal + Interest)
@@ -117,7 +117,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 ** Cash Flows for a 10-Year Bond with 6% Annual Coupon
 
-<img src="images/2_4.png" alt="" width="380" >
+<img src="images/2_4.png" alt="" width="500" >
 
         - Years 1-9: ~$60 (Coupon)
         - Year 10: ~$1060 (Principal + Coupon)
