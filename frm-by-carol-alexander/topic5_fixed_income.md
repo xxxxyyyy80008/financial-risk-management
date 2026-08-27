@@ -37,17 +37,14 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 ```math
 \text{PV01}_i = c_i \left( (1 + r_i + 0.01\%)^{-t_i} - (1 + r_i)^{-t_i} \right)
 ```
-$$
-\text{PV01}_i = c_i \left( (1 + r_i + 0.01\%)^{-t_i} - (1 + r_i)^{-t_i} \right)
-$$
 
 - Example: What is the PV01 of cash flow of $5m in 2 years time when the 2-year interest rate is 4% ?
 
-  $$
-  \text{PV01} = 5,000,000 \left( (1 + 4.01\%)^{-2} - (1 + 4\%)^{-2} \right)
-  $$
+```math
+\text{PV01} = 5,000,000 \left( (1 + 4.01\%)^{-2} - (1 + 4\%)^{-2} \right)
+```
 
-  That is: $\text{PV01} = \$5,000,000 \times (-0.00018) = -\$890$
+  That is: $\text{PV01} = \5,000,000 \times (-0.00018) = -\890$
 
 
 
@@ -61,9 +58,9 @@ $$
 
 - The factor model represents the **change in value** $\Delta P_t$ of the **cash-flow portfolio** at time $t$, assuming $\mathbf{p}$ is held constant, i.e.
 
-  $$
-  \Delta P_t = \text{PV01}_1 \Delta r_{t1} + ... + \text{PV01}_n \Delta r_{tn} = \mathbf{p}' \Delta \mathbf{r}_t
-  $$
+```math
+\Delta P_t = \text{PV01}_1 \Delta r_{t1} + ... + \text{PV01}_n \Delta r_{tn} = \mathbf{p}' \Delta \mathbf{r}_t
+```
 
   where $\Delta \mathbf{r}_t = (\Delta r_{t1}, \Delta r_{t2}, ..., \Delta r_{tn})'$ is the vector of basis point changes in interest rates at time $t$
 
@@ -93,16 +90,16 @@ $$
 - Suppose our data are daily, i.e. $\Delta \mathbf{r}_t$ are daily changes
 - Taking variances of the factor model $\Delta P_t = \mathbf{p}' \Delta \mathbf{r}_t$ yields:
 
-  $$
-  \mathbb{V}(\Delta P) = \mathbf{p}' \mathbb{V}(\Delta \mathbf{r}) \mathbf{p}
-  $$
+```math
+\mathbb{V}(\Delta P) = \mathbf{p}' \mathbb{V}(\Delta \mathbf{r}) \mathbf{p}
+```
 
 - $\mathbb{V}(\Delta \mathbf{r})$ is the covariance matrix of daily changes in interest rates
 - Then, using zero mean in the normal VaR formula, we have:
 
-  $$
-  \text{VaR}_{h,\alpha} = \Phi^{-1}(1 - \alpha) \sqrt{h \, \mathbb{V}(\Delta P_t)}
-  $$
+```math
+\text{VaR}_{h,\alpha} = \Phi^{-1}(1 - \alpha) \sqrt{h \, \mathbb{V}(\Delta P_t)}
+```
 
 ---
 
@@ -110,9 +107,9 @@ $$
 
 - Historical simulation directly applies the factor model
 
-  $$
-  \Delta P_t = \mathbf{p}' \Delta \mathbf{r}_t \stackrel{a}{\sim}
-  $$
+```math
+\Delta P_t = \mathbf{p}' \Delta \mathbf{r}_t \stackrel{a}{\sim}
+```
 
   to historical time series on the vector $\Delta \mathbf{r}_t$, namely the daily changes in interest rates, measured in basis points
 
@@ -166,9 +163,9 @@ This is $\mathbf{p}$, the vector of PV01 cash flow sensitivities, after mapping 
 
 - The variance of the daily P&L of the mapped cash flow is
 
-  $$
-  \mathbb{V}(\Delta P) = \mathbf{p}' \mathbb{V}(\Delta \mathbf{r}) \mathbf{p}
-  $$
+```math
+\mathbb{V}(\Delta P) = \mathbf{p}' \mathbb{V}(\Delta \mathbf{r}) \mathbf{p}
+```
 
   where $\mathbf{p}$ is the PV01 vector given on the previous slide
 
@@ -178,9 +175,9 @@ This is $\mathbf{p}$, the vector of PV01 cash flow sensitivities, after mapping 
 
 - Now, applying the normal VaR formula and the usual square root of time rule, we obtain the 1% 10-day normal VaR:
 
-  $$
-  \text{VaR}_{10,1\%} = 1,769,416 \text{ GBP}
-  $$
+```math
+\text{VaR}_{10,1\%} = 1,769,416 \text{ GBP}
+```
 
 ---
 
@@ -198,6 +195,6 @@ This is $\mathbf{p}$, the vector of PV01 cash flow sensitivities, after mapping 
 
 - Finally we use the square root of time rule to obtain the 1% 10-day historical VaR:
 
-  $$
-  \text{VaR}_{10,1\%} = -q_{1\%} \times \sqrt{10} = 1,962,959 \text{ GBP}
-  $$
+```math
+\text{VaR}_{10,1\%} = -q_{1\%} \times \sqrt{10} = 1,962,959 \text{ GBP}
+```
