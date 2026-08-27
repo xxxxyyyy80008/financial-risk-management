@@ -191,28 +191,12 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 ### **Term Structure of Credit Spreads**
 
 <img src="images/2_8.png" alt="" width="550" >
-- **Graph:**
-    - **Y-axis:** Yield, bp (basis points)
-    - **X-axis:** Maturity, years
-    - **Curves:**
-        - **Corporate Bond** (Black line): Higher yield curve
-        - **Treasury security** (Blue line): Lower yield curve
-    - **Credit spread:** Difference between Corporate Bond and Treasury security yields
+
 
 ### **Relationship Between Credit Ratings and Credit Spreads**
 
 <img src="images/2_9.png" alt="" width="550" >
-- **Graph:**
-    - **Title:** Hypothetical Yield Curves
-    - **Y-axis:** Yield to Maturity (%)
-    - **X-axis:** Maturity (Years)
-    - **Curves:**
-        - **Corporate CC (High Yield)** (Blue line): Highest yield curve
-        - **Corporate AA (Investment Grade)** (Light Blue line): Middle yield curve
-        - **Government Treasury** (Gray line): Lowest yield curve
-    - **Credit Spreads:**
-        - **Credit Spread for High Yield (Junk) Bond Rated CC**
-        - **Credit Spread for Investment Grade Bond Rated AA**
+
 
 
 ### **Why do Credit Spreads Change?**
@@ -262,17 +246,8 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 - There is a seniority structure in the obligor's debt whereby senior debt holders recover more than holders of subordinated debt
 - For instance, about 70% is recovered from senior secured bank loans, on average
 - But senior unsecured bondholders recover about 40% and junior subordinated debt holders recover less than 20%, on average
-- **Bar Chart:**
-    - **Title:** RECOVERY RATE BY INSTRUMENT TYPE
-    - **Y-axis:** Dollar-weighted recovery rate (%)
-    - **X-axis:** Instrument Type
-        - Term loans (first lien)
-        - Term loans (second lien)
-        - Senior unsecured
-        - Senior secured bonds
-        - Senior unsecured bonds
 
-<img src="images/2_10.png" alt="" width="550" >
+<img src="images/2_10.png" alt="" width="380" >
 
 ### **Measuring Credit Risk**
 
@@ -287,7 +262,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
         - Unexpected Loss (UL)
         - Value-at-Risk (VaR) at a given confidence level
 
-<img src="images/2_7.png" alt="" width="550" >
+<img src="images/2_7.png" alt="" width="570" >
 
 ### **Methods for Mitigating Credit Risks**
 
