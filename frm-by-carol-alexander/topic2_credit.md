@@ -63,8 +63,8 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 ### **Forward Rate Agreement (FRA)**
 
-<img src="images/2_1.png" alt="" width="300" height="200">
-<img src="images/2_2.png" alt="" width="300" height="200">
+<img src="images/2_1.png" alt="" width="320" height="200">
+<img src="images/2_2.png" alt="" width="380" >
 
 
 - **Timeline:**
