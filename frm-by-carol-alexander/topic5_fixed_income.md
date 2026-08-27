@@ -44,7 +44,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 \text{PV01} = 5,000,000 \left( (1 + 4.01\%)^{-2} - (1 + 4\%)^{-2} \right)
 ```
 
-  That is: $\text{PV01} = \5,000,000 \times (-0.00018) = -\890$
+  That is: $\text{PV01} = 5,000,000 \times (-0.00018) = -890$
 
 
 
@@ -62,7 +62,11 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 \Delta P_t = \text{PV01}_1 \Delta r_{t1} + ... + \text{PV01}_n \Delta r_{tn} = \mathbf{p}' \Delta \mathbf{r}_t
 ```
 
-  where $\Delta \mathbf{r}_t = (\Delta r_{t1}, \Delta r_{t2}, ..., \Delta r_{tn})'$ is the vector of basis point changes in interest rates at time $t$
+  where 
+  ```math
+  \Delta \mathbf{r}_t = (\Delta r_{t1}, \Delta r_{t2}, ..., \Delta r_{tn})'
+  ``` 
+  is the vector of basis point changes in interest rates at time $t$
 
 
 ---
