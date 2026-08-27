@@ -121,10 +121,12 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 - This gives a single column representing the time series for $\Delta P_t$
 
-- Then $\text{VaR}_{1,\alpha} = -\text{PERCENTILE}(\text{column for } \Delta P_t, \alpha)$
+- Then 
+```math
+\text{VaR}_{1,\alpha} = -\text{PERCENTILE}(\text{column for } \Delta P_t, \alpha)
+```
 
-- And $\text{VaR}_{h,\alpha} = \sqrt{h} \, \text{VaR}_{1,\alpha}$
-
+- And 
 ```math
 \text{VaR}_{h,\alpha} = \sqrt{h} \, \text{VaR}_{1,\alpha}
 ```
