@@ -60,7 +60,7 @@ is between 2 and 3, so the graph of the exponential function $e^x$ lies between 
 
 The exponential function $e^x$ is also denoted $\exp(x)$
 
-<img src="images/3_2.png" alt="" width="590" >
+<img src="images/3_2.png" alt="" width="390" >
 ---
 
 **Reminder 2**
@@ -204,12 +204,21 @@ $\Phi$ distribution function
 
 ### **Definition of a Matrix**
 
-- A matrix is a rectangular array of numbers. It is denoted by a bold capital letter, such as $ \mathbf{X}, \mathbf{Y}, \mathbf{A} $ or $ \mathbf{B} $
+- A matrix is a rectangular array of numbers. It is denoted by a bold capital letter, such as 
+```math
+ \mathbf{X}, \mathbf{Y}, \mathbf{A} $ or $ \mathbf{B} 
+ ```
 - Its **dimension** is the number of rows and the number of columns. This is written as $ r \times c $.
-- For example, $ \begin{pmatrix} 2 & 5 & 1 \\ 0 & 6 & 4 \end{pmatrix} $ is a $ 2 \times 3 $ matrix
+- For example, 
+```math
+ \begin{pmatrix} 2 & 5 & 1 \\ 0 & 6 & 4 \end{pmatrix} 
+ ``` is a $ 2 \times 3 $ matrix
 - The individual cells (or **elements**) in a matrix are identified by their position in the row and column
 - In general notation, the element at the junction of the $ i^{th} $ row and $ j^{th} $ column of matrix $ \mathbf{X} $ is written $ x_{ij} $
-- So if $ \mathbf{X} = \begin{pmatrix} 1 & 5 & -1 & 3 \\ 2 & 1 & 4 & 6 \end{pmatrix} $ then $ x_{12} = 5 $, for example.
+- So if 
+```math
+\mathbf{X} = \begin{pmatrix} 1 & 5 & -1 & 3 \\ 2 & 1 & 4 & 6 \end{pmatrix} 
+``` then $ x_{12} = 5 $, for example.
 
 
 ---
