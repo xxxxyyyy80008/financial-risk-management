@@ -340,9 +340,10 @@ c\mathbf{X} = (cx_{ij})
 - Then $\mathbf{x}'\mathbf{A}\mathbf{x}$ is called a **quadratic form**
 - For instance, if 
 ```math
-\mathbf{A} = \begin{pmatrix} 1 & 2 \\ 3 & -1 \end{pmatrix}$ and $\mathbf{x} = (x, y)'
-```
- then
+\mathbf{A} = \begin{pmatrix} 1 & 2 \\ 3 & -1 \end{pmatrix}
+``` 
+$\mathbf{x} = (x, y)'$
+then
 
 ```math
 \mathbf{x}'\mathbf{A}\mathbf{x} = x^2 + 5xy - y^2
