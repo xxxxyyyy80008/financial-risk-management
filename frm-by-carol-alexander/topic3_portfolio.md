@@ -484,7 +484,9 @@ For random variables *X* and *Y* and constants *a* and *b*:
 - Suppose you have holdings of 100 shares of Amazon (AMZN) and 200 shares of Tesla (TSLA) in a portfolio.
 - Suppose the price of AMZN is `$20` and the price of TSLA is `$25`.
 - Then the portfolio value is
-  $\$(100 \times 20 + 200 \times 25) = \$(2000 + 5000) = \$7000$
+```math
+\$(100 \times 20 + 200 \times 25) = \$(2000 + 5000) = \$7000
+```
 - So the weights are $2/7 = 28.6\%$ on AMZN and $5/7 = 71.4\%$ on TSLA.
 - If the price of **either** stock changes, then so does the portfolio value and so **both weights change**.
 
