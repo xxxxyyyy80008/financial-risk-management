@@ -208,18 +208,19 @@ $\Phi$ distribution function
 ```math
  \mathbf{X}, \mathbf{Y}, \mathbf{A}, or \mathbf{B} 
  ```
-- Its **dimension** is the number of rows and the number of columns. This is written as $ r \times c $.
+- Its **dimension** is the number of rows and the number of columns. This is written as $r \times c$.
 - For example, 
 ```math
  \begin{pmatrix} 2 & 5 & 1 \\ 0 & 6 & 4 \end{pmatrix} 
  ``` 
  is a $2 \times 3$ matrix
 - The individual cells (or **elements**) in a matrix are identified by their position in the row and column
-- In general notation, the element at the junction of the $ i^{th} $ row and $ j^{th} $ column of matrix $ \mathbf{X} $ is written $ x_{ij} $
+- In general notation, the element at the junction of the $ i^{th} $ row and $ j^{th} $ column of matrix $\mathbf{X} $ is written $ x_{ij}$
 - So if 
 ```math
 \mathbf{X} = \begin{pmatrix} 1 & 5 & -1 & 3 \\ 2 & 1 & 4 & 6 \end{pmatrix} 
-``` then $ x_{12} = 5 $, for example.
+```
+then $x_{12} = 5$, for example.
 
 
 ---
@@ -249,7 +250,7 @@ $\Phi$ distribution function
 ### **Matrix Addition**
 
 - Matrices can **only** be added and subtracted if each matrix has the **same dimension**
-- So if $ \mathbf{X} = (x_{ij}) $ and $ \mathbf{Y} = (y_{ij}) $ are both $ r \times c $ matrices then
+- So if $\mathbf{X} = (x_{ij})$ and $\mathbf{Y} = (y_{ij})$ are both $r \times c$ matrices then
 
 ```math
 \mathbf{X} + \mathbf{Y} = (x_{ij} + y_{ij}) \quad \text{and} \quad \mathbf{X} - \mathbf{Y} = (x_{ij} - y_{ij})
@@ -272,7 +273,7 @@ $\Phi$ distribution function
 
 ### **Scalar Multiplication**
 
-- Let $ \mathbf{X} = (x_{ij}) $ and $ c $ be any number (i.e. a scalar). Then
+- Let $\mathbf{X} = (x_{ij})$ and $ c $ be any number (i.e. a scalar). Then
 
 ```math
 c\mathbf{X} = (cx_{ij})
