@@ -75,11 +75,11 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 - We need to find $\mathbb{V}(\Delta P)$. Applying the **quadratic form rule for variance** – see Topic 3 Part 6 (slide 58) – to the factor model, we have:
 
-  ```math
-  \mathbb{V}(\mathbf{p}' \Delta \mathbf{r}) = \mathbf{p}' \mathbb{V}(\Delta \mathbf{r}) \mathbf{p}
-  ```
+```math
+\mathbb{V}(\mathbf{p}' \Delta \mathbf{r}) = \mathbf{p}' \mathbb{V}(\Delta \mathbf{r}) \mathbf{p}
+```
 
-- We know ```math \mathbf{p} ```, this is the PV01 vector of the mapped cash flows at the time we measure VaR. And we use historical data on $\Delta \mathbf{r}_t$ to find $\mathbb{V}(\Delta \mathbf{r})$ in Excel
+- We know $\mathbf{p}$, this is the PV01 vector of the mapped cash flows at the time we measure VaR. And we use historical data on $\Delta \mathbf{r}_t$ to find $\mathbb{V}(\Delta \mathbf{r})$ in Excel
 
 - The base VaR holding period is the same as the frequency of the data used to obtain the **covariance matrix** $\mathbb{V}(\Delta \mathbf{r})$
 
@@ -125,7 +125,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 - And $\text{VaR}_{h,\alpha} = \sqrt{h} \, \text{VaR}_{1,\alpha}$
 
-
+$\text{VaR}_{h,\alpha} = \sqrt{h} \, \text{VaR}_{1,\alpha}$
 
 ## 5.4 Example: VaR for a Gilts Portfolio
 
