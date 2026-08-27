@@ -213,7 +213,7 @@ $\Phi$ distribution function
 ```math
  \begin{pmatrix} 2 & 5 & 1 \\ 0 & 6 & 4 \end{pmatrix} 
  ``` 
- is a $ 2 \times 3 $ matrix
+ is a $2 \times 3$ matrix
 - The individual cells (or **elements**) in a matrix are identified by their position in the row and column
 - In general notation, the element at the junction of the $ i^{th} $ row and $ j^{th} $ column of matrix $ \mathbf{X} $ is written $ x_{ij} $
 - So if 
