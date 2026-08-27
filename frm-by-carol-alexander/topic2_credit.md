@@ -129,9 +129,6 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 <img src="images/2_5.png" alt="" width="500" >
 
-- Counterparty A is typically a company
-- Counterparty B is typically a bank
-
 
 
 ### **Valuation of Credit-Risky Products**
@@ -140,12 +137,9 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 - A bank or a company's holdings of all real and financial assets are reported in a statement of their current financial position called a balance sheet
 - When valuing credit-risky assets on a balance sheet, the audit is based on cash flows discounted to net present value (NPV) terms
 
-<img src="images/2_6.png" alt="" width="500" >
-- **Figure 1: Representation of a DCF valuation**
-    - **Diagram:**
-        - Arrows showing discounted cash flows from year 1 to year n
-        - Terminal value at year n+1
-        - **DCF value = Discounted cash flows in years 1 to n plus Terminal value in year n+1**
+<img src="images/2_6.png" alt="" width="550" >
+
+**DCF value = Discounted cash flows in years 1 to n plus Terminal value in year n+1**
 
 
 ### **Net Present Value – General Formula**
@@ -196,7 +190,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
   
 ### **Term Structure of Credit Spreads**
 
-
+<img src="images/2_8.png" alt="" width="550" >
 - **Graph:**
     - **Y-axis:** Yield, bp (basis points)
     - **X-axis:** Maturity, years
@@ -207,7 +201,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 ### **Relationship Between Credit Ratings and Credit Spreads**
 
-
+<img src="images/2_9.png" alt="" width="550" >
 - **Graph:**
     - **Title:** Hypothetical Yield Curves
     - **Y-axis:** Yield to Maturity (%)
@@ -278,7 +272,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
         - Senior secured bonds
         - Senior unsecured bonds
 
-
+<img src="images/2_10.png" alt="" width="550" >
 
 ### **Measuring Credit Risk**
 
@@ -293,6 +287,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
         - Unexpected Loss (UL)
         - Value-at-Risk (VaR) at a given confidence level
 
+<img src="images/2_7.png" alt="" width="550" >
 
 ### **Methods for Mitigating Credit Risks**
 
