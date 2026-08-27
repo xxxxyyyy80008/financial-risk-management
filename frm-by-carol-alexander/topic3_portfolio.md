@@ -195,10 +195,10 @@ $\Phi$ distribution function
 
 ### **Definition of a Vector**
 
-- Vectors are columns or rows of data usually denoted by lower-case bold type letters, $ \mathbf{x}, \mathbf{y}, \mathbf{a}, \mathbf{b} $ etc.
-- A column vector has $ n $ rows and 1 column, i.e. its **dimension** is $ n \times 1 $. A row vector has $ n $ columns and 1 row, i.e. its dimension is $ 1 \times n $
-- An example of a $ 4 \times 1 $ column vector is: $ \mathbf{x} = \begin{pmatrix} 1 \\ 2 \\ 0 \\ -1 \end{pmatrix} $
-- A $ 1 \times 1 $ vector is called a **scalar** and it is not written in bold. For our purposes a scalar is just a number
+- Vectors are columns or rows of data usually denoted by lower-case bold type letters, $\mathbf{x}, \mathbf{y}, \mathbf{a}, \mathbf{b}$ etc.
+- A column vector has $ n $ rows and 1 column, i.e. its **dimension** is $n \times 1$. A row vector has $n$ columns and 1 row, i.e. its dimension is $1 \times n$
+- An example of a $4 \times 1$ column vector is: $\mathbf{x} = \begin{pmatrix} 1 \\ 2 \\ 0 \\ -1 \end{pmatrix}$
+- A $1 \times 1$ vector is called a **scalar** and it is not written in bold. For our purposes a scalar is just a number
 
 ---
 
