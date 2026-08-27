@@ -83,11 +83,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 - The base VaR holding period is the same as the frequency of the data used to obtain the **covariance matrix** $\mathbb{V}(\Delta \mathbf{r})$
 
-  For example, if data are daily, so that $\mathbb{V}(\Delta \mathbf{r})$ is the covariance matrix of daily changes in interest rates, the normal VaR formula gives 
-  ```math
-  \text{VaR}_{1,\alpha}
-  ```. 
-  And if data are weekly, so that $\mathbb{V}(\Delta \mathbf{r})$ is the covariance matrix of weekly changes in interest rates, the formula gives $\text{VaR}_{5,\alpha}$.
+  - For example, if data are daily, so that $\mathbb{V}(\Delta \mathbf{r})$ is the covariance matrix of daily changes in interest rates, the normal VaR formula gives $\text{VaR}_{1,\alpha}$. And if data are weekly, so that $\mathbb{V}(\Delta \mathbf{r})$ is the covariance matrix of weekly changes in interest rates, the formula gives $\text{VaR}_{5,\alpha}$.
 
 - Whatever the base frequency of the data, normal VaR can be scaled using the square-root-of-time rule in the usual way
 
@@ -142,7 +138,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 <img src="images/5_1.png" alt="" width="590" >
 
-**Caption:**  
+
 We use the rates for **0.5, 1, 1.5, ..., 25 years** as vertices for measuring normal and historical VaR, for a cash-flow portfolio of long and short UK government bonds, called **Gilts**, on 30 Sept 2024
 
 
@@ -151,10 +147,8 @@ We use the rates for **0.5, 1, 1.5, ..., 25 years** as vertices for measuring no
 
 ### **PV01 of Mapped Cash Flows ('000 GBP)**
 
-*(Chart description)*  
-A bar chart titled “PV01” showing the PV01 sensitivities across maturities from 0.5 Y to 24.5 Y. The vertical axis ranges from -6 to 6 (in thousands of GBP). Short-term maturities (0.5Y–8.5Y) show negative PV01 values (short positions), while longer maturities (9.5Y–24.5Y) show positive PV01 values (long positions), with magnitude increasing toward the long end.
+<img src="images/5_2.png" alt="" width="590" >
 
-**Caption:**  
 This is $\mathbf{p}$, the vector of PV01 cash flow sensitivities, after mapping to vertices 0.5, 1, 1.5, ..., 25 years, for our Gilts portfolio on 20 Sept 2024
 
 
