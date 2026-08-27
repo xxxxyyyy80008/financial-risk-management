@@ -34,6 +34,9 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 - The **present value of a basis point** move, PV01, of $c_i$ is the sensitivity of $c_i$ to a 1 bp increase in $r_i$:
 
+```math
+\text{PV01}_i = c_i \left( (1 + r_i + 0.01\%)^{-t_i} - (1 + r_i)^{-t_i} \right)
+```
 $$
 \text{PV01}_i = c_i \left( (1 + r_i + 0.01\%)^{-t_i} - (1 + r_i)^{-t_i} \right)
 $$
