@@ -598,7 +598,9 @@ For random variables *X* and *Y* and constants *a* and *b*:
 
 - Let $V$ be the covariance matrix of the returns on $n$ assets and let $\mathbf{w}$ be the $n \times 1$ vector of portfolio weights
 - Then $\mathbf{w}'\mathbf{V}\mathbf{w}$ is the variance of the portfolio return. Being a variance, it must always be positive, for **any** weights – even if some are negative
-- For instance, if $\mathbf{V} = \begin{pmatrix} 0.1 & 0.2 \\ 0.2 & 0.15 \end{pmatrix}$ and $\mathbf{w} = (w_1, w_2)'$ then
+- For instance, if 
+$\mathbf{V} = \begin{pmatrix} 0.1 & 0.2 \\ 0.2 & 0.15 \end{pmatrix}$
+ and $\mathbf{w} = (w_1, w_2)'$ then
 
 ```math
 \mathbf{w}'\mathbf{V}\mathbf{w} = 0.1w_1^2 + 0.4w_1w_2 + 0.15w_2^2
