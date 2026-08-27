@@ -305,7 +305,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 - The company sends these floating-rate payments to the bank that made the loan, so the company ends up only making fixed-rate payments
 
 
-### ** Example**
+### **Example**
 
 <img src="images/2_11.png" alt="" width="380" >
 
@@ -375,9 +375,6 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 - The buyer of the CDS makes a series of payments to the seller, with amounts being based on the CDS spread. In exchange, the buyer receives a pay-off from the seller if the credit defaults
 - Left: The buyer purchases a CDS at time $t_0$ and makes regular premium payments at times $t_1, t_2, t_3, ...$ and so on until the end of the contract unless the associated instrument suffers a credit default
 - Right: If the underlying instrument suffers a credit default at $t_5$, then the seller compensates the buyer for that loss, and the buyer ceases paying premiums to the seller
-- **Diagrams:**
-    - Left: Timeline showing protection buyer making payments to protection seller from $t_0$ to $t_n$.
-    - Right: Timeline showing protection buyer making payments to protection seller from $t_0$ to $t_5$, then protection seller compensating protection buyer after a credit default event at $t_5$.
 
 <img src="images/2_12.png" alt="" width="280" >
 
