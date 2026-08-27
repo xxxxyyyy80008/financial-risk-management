@@ -206,13 +206,14 @@ $\Phi$ distribution function
 
 - A matrix is a rectangular array of numbers. It is denoted by a bold capital letter, such as 
 ```math
- \mathbf{X}, \mathbf{Y}, \mathbf{A} or \mathbf{B} 
+ \mathbf{X}, \mathbf{Y}, \mathbf{A}, or \mathbf{B} 
  ```
 - Its **dimension** is the number of rows and the number of columns. This is written as $ r \times c $.
 - For example, 
 ```math
  \begin{pmatrix} 2 & 5 & 1 \\ 0 & 6 & 4 \end{pmatrix} 
- ``` is a $ 2 \times 3 $ matrix
+ ``` 
+ is a $ 2 \times 3 $ matrix
 - The individual cells (or **elements**) in a matrix are identified by their position in the row and column
 - In general notation, the element at the junction of the $ i^{th} $ row and $ j^{th} $ column of matrix $ \mathbf{X} $ is written $ x_{ij} $
 - So if 
