@@ -231,7 +231,7 @@ then $x_{12} = 5$, for example.
 ### **Transpose of a Matrix**
 
 - The **transpose** of a matrix is produced by **swapping the rows and columns**
-- Transpose is denoted by the $ T $ superscript or a ‘prime’ symbol $ ' $
+- Transpose is denoted by the $T$ superscript or a ‘prime’ symbol $'$
 - **Example**
 
 ```math
@@ -276,7 +276,7 @@ then $x_{12} = 5$, for example.
 
 ### **Scalar Multiplication**
 
-- Let $\mathbf{X} = (x_{ij})$ and $ c $ be any number (i.e. a scalar). Then
+- Let $\mathbf{X} = (x_{ij})$ and $c$ be any number (i.e. a scalar). Then
 
 ```math
 c\mathbf{X} = (cx_{ij})
@@ -315,7 +315,7 @@ c\mathbf{X} = (cx_{ij})
 
 - Matrices can be multiplied, but **only** if their dimensions are **compatible**, namely that the number of columns in the first equals the number of rows in the second
 - If $\mathbf{X}$ has order $r \times c$ and $\mathbf{Y}$ has order $m \times n$ then $\mathbf{XY}$ only exists if $c = m$; then $\mathbf{XY}$ has order $r \times n$
-- The $ij^{th}$ element of the product $\mathbf{XY} $ is the **dot product** of the $i^{th}$ row of $\mathbf{X}$ and the $j^{th}$ column of $\mathbf{Y}$
+- The $ij^{th}$ element of the product $\mathbf{XY}$ is the **dot product** of the $i^{th}$ row of $\mathbf{X}$ and the $j^{th}$ column of $\mathbf{Y}$
 
 
 
