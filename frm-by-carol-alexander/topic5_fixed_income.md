@@ -83,9 +83,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 - The base VaR holding period is the same as the frequency of the data used to obtain the **covariance matrix** $\mathbb{V}(\Delta \mathbf{r})$
 
-For example, if data are daily, so that $\mathbb{V}(\Delta \mathbf{r})$ is the covariance matrix of daily changes in interest rates, the normal VaR formula gives 
-
-$\text{VaR}_{1,\alpha}$. 
+For example, if data are daily, so that $\mathbb{V}(\Delta \mathbf{r})$ is the covariance matrix of daily changes in interest rates, the normal VaR formula gives $\text{VaR}_{1,\alpha}$. 
 
 And if data are weekly, so that $\mathbb{V}(\Delta \mathbf{r})$ is the covariance matrix of weekly changes in interest rates, the formula gives $\text{VaR}_{5,\alpha}$.
 
