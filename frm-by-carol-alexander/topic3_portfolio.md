@@ -341,9 +341,9 @@ $$
 - Then $ \mathbf{x}'\mathbf{A}\mathbf{x} $ is called a **quadratic form**
 - For instance, if $ \mathbf{A} = \begin{pmatrix} 1 & 2 \\ 3 & -1 \end{pmatrix} $ and $ \mathbf{x} = (x, y)' $ then
 
-$$
+```math
 \mathbf{x}'\mathbf{A}\mathbf{x} = x^2 + 5xy - y^2
-$$
+```
 
 - So if, for instance, $ x = 1 $ and $ y = 2 $ then the value of the quadratic form is $ 1 + 10 - 4 = 7 $
 - A matrix $ \mathbf{A} $ is **positive definite** if (and only if) all quadratic forms are positive, for any (non-zero) value of $ \mathbf{x} $.
@@ -551,11 +551,11 @@ For random variables *X* and *Y* and constants *a* and *b*:
 - Our formula for the variance $\sigma_p^2$ of a portfolio $p$ uses the portfolio weights $w_i$ on the assets in the portfolio and the standard deviations $\sigma_i$ and correlations $\rho_{ij}$ (or covariances, $\sigma_{ij}$) of the asset’s returns
 - If there are $n$ assets in the portfolio then:
 
-  $$\sigma_p^2 = \sum_{i=1}^n w_i^2 \sigma_i^2 + 2 \sum_{i=1}^n \sum_{j > i} w_i w_j \sigma_{ij}$$
+$$\sigma_p^2 = \sum_{i=1}^n w_i^2 \sigma_i^2 + 2 \sum_{i=1}^n \sum_{j > i} w_i w_j \sigma_{ij}$$
 
 - But $\sigma_{ij} = \rho_{ij} \sigma_i \sigma_j$ so we also have:
 
-  $$\sigma_p^2 = \sum_{i=1}^n w_i^2 \sigma_i^2 + 2 \sum_{i=1}^n \sum_{j > i} w_i w_j \rho_{ij} \sigma_i \sigma_j$$
+$$\sigma_p^2 = \sum_{i=1}^n w_i^2 \sigma_i^2 + 2 \sum_{i=1}^n \sum_{j > i} w_i w_j \rho_{ij} \sigma_i \sigma_j$$
 
 
 
