@@ -63,7 +63,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 ### **Forward Rate Agreement (FRA)**
 
-<img src="images/2_1.png" alt="" width="320" height="200">
+<img src="images/2_1.png" alt="" width="360" >
 <img src="images/2_2.png" alt="" width="380" >
 
 
@@ -102,12 +102,11 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 
 - For example, these are the cash flows on a five-year amortised loan of $1000 with an interest rate of 10% interest
-- **Chart:**
-    - **Title:** Cash Flows to the Lender of a 5-Year Loan with 10% Interest (Interest + Principal)
-    - **Legend:** Principal Payments, Interest Payments
-    - **Y-axis:** Cash Flows ($)
-    - **X-axis:** Years (1, 2, 3, 4, 5)
-    - **Bars:**
+
+** Cash Flows to the Lender of a 5-Year Loan with 10% Interest (Interest + Principal)
+
+<img src="images/2_3.png" alt="" width="380" >
+
         - Year 1: ~$260 (Principal + Interest)
         - Year 2: ~$270 (Principal + Interest)
         - Year 3: ~$280 (Principal + Interest)
@@ -116,12 +115,10 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 ### **Cash Flows on a Fixed-Rate Bond**
 
+** Cash Flows for a 10-Year Bond with 6% Annual Coupon
 
-- **Chart:**
-    - **Title:** Cash Flows for a 10-Year Bond with 6% Annual Coupon
-    - **Y-axis:** Cash Flow ($)
-    - **X-axis:** Years (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-    - **Data Points:**
+<img src="images/2_4.png" alt="" width="380" >
+
         - Years 1-9: ~$60 (Coupon)
         - Year 10: ~$1060 (Principal + Coupon)
 - Note that the face value of this bond is $1000 not $100
@@ -130,17 +127,8 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 ### **Cash Flows on Fixed-for-Floating Interest Rate Swap**
 
 
-- **Diagrams:**
-    - **A:** Pays Fixed, Receives Floating
-        - **Timeline:**
-            - $t_0, t_1, t_2, t_3, t_N$
-            - Blue arrows pointing up: Floating-rate payments
-            - Red arrows pointing down: Fixed-rate payments
-    - **B:** Pays Floating, Receives Fixed
-        - **Timeline:**
-            - $t_0, t_1, t_2, t_3, t_N$
-            - Blue arrows pointing up: Floating-rate payments
-            - Red arrows pointing down: Fixed-rate payments
+<img src="images/2_5.png" alt="" width="380" >
+
 - Counterparty A is typically a company
 - Counterparty B is typically a bank
 
