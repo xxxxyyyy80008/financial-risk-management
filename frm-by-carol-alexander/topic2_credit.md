@@ -127,7 +127,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 ### **Cash Flows on Fixed-for-Floating Interest Rate Swap**
 
 
-<img src="images/2_5.png" alt="" width="380" >
+<img src="images/2_5.png" alt="" width="500" >
 
 - Counterparty A is typically a company
 - Counterparty B is typically a bank
@@ -139,6 +139,8 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 - A bank or a company's holdings of all real and financial assets are reported in a statement of their current financial position called a balance sheet
 - When valuing credit-risky assets on a balance sheet, the audit is based on cash flows discounted to net present value (NPV) terms
+
+<img src="images/2_6.png" alt="" width="500" >
 - **Figure 1: Representation of a DCF valuation**
     - **Diagram:**
         - Arrows showing discounted cash flows from year 1 to year n
