@@ -84,8 +84,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 - The base VaR holding period is the same as the frequency of the data used to obtain the **covariance matrix** $\mathbb{V}(\Delta \mathbf{r})$
 
   - For example, if data are daily, so that $\mathbb{V}(\Delta \mathbf{r})$ is the covariance matrix of daily changes in interest rates, the normal VaR formula gives $\text{VaR}_{1,\alpha}$. And if data are weekly, so that $\mathbb{V}(\Delta \mathbf{r})$ is the covariance matrix of weekly changes in interest rates, the formula gives $\text{VaR}_{5,\alpha}$.
-$\text{VaR}_{5,\alpha}$
-$\mathbb{VaR}_{5,\alpha}$
+
 - Whatever the base frequency of the data, normal VaR can be scaled using the square-root-of-time rule in the usual way
 
 ---
@@ -197,9 +196,9 @@ This is $\mathbf{p}$, the vector of PV01 cash flow sensitivities, after mapping 
 
 - Now we find the 1% quantile of the historical P&L in Excel by applying the PERCENTILE function in Excel, giving the 1% quantile:
 
-  $$
+```math
   q_{1\%} = -598,309 \text{ GBP}
-  $$
+```
 
 - Finally we use the square root of time rule to obtain the 1% 10-day historical VaR:
 
