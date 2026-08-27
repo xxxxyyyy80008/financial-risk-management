@@ -254,13 +254,6 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 - The risk of a credit exposure depends on its size, maturity, and the obligor's default probability – and the risk of a portfolio of credit exposures depends on how defaults and migrations are correlated between obligors
 - Credit Value-at-Risk models changes in the portfolio value due to credit events, not just defaults but ratings upgrades and downgrades, using 1-year transition matrices and mathematical models for correlation
-- **Graph:**
-    - **Y-axis:** Frequency
-    - **X-axis:** Potential Losses
-    - **Curves:**
-        - Expected Loss (EL)
-        - Unexpected Loss (UL)
-        - Value-at-Risk (VaR) at a given confidence level
 
 <img src="images/2_7.png" alt="" width="570" >
 
@@ -314,6 +307,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 ### ** Example**
 
+<img src="images/2_11.png" alt="" width="550" >
 - **Diagram:**
     - **Company:**
         - Pays LIBOR + 1% to Bank A
@@ -430,7 +424,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 ### ** Illustration of a Collateralised Loan Obligation**
 
-
+<img src="images/2_13.png" alt="" width="550" >
 - **Diagram:**
     - **Left Arrow (Green):** Claims on Cash Flow, Decreasing by Collateral
     - **Middle Bar (CLO Debt issued in tranches):**
