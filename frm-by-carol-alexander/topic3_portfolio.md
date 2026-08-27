@@ -294,7 +294,7 @@ c\mathbf{X} = (cx_{ij})
 
 ### **Vector Multiplication: Excel SUMPRODUCT**
 
-- The **dot product** $ \mathbf{x} \cdot \mathbf{y} $ only exists for two row or column vectors $ \mathbf{x} $ and $ \mathbf{y} $ of the **same dimension**
+- The **dot product** $\mathbf{x} \cdot \mathbf{y}$ only exists for two row or column vectors $\mathbf{x}$ and $\mathbf{y}$ of the **same dimension**
 - It works by multiplying elements in the same position then adding. For instance:
 
 ```math
@@ -303,7 +303,7 @@ c\mathbf{X} = (cx_{ij})
 = 2 + 6 + 0 - 5 = 3
 ```
 
-- Next we do matrix multiplication, which shows that $ \mathbf{x} \cdot \mathbf{y} = \mathbf{x}'\mathbf{y} $ for two column vectors and $ \mathbf{x} \cdot \mathbf{y} = \mathbf{x}\mathbf{y}' $ for two row vectors
+- Next we do matrix multiplication, which shows that $\mathbf{x} \cdot \mathbf{y} = \mathbf{x}'\mathbf{y}$ for two column vectors and $\mathbf{x} \cdot \mathbf{y} = \mathbf{x}\mathbf{y}'$ for two row vectors
 
 
 ---
@@ -311,8 +311,8 @@ c\mathbf{X} = (cx_{ij})
 ### **Matrix Multiplication: Excel MMULT**
 
 - Matrices can be multiplied, but **only** if their dimensions are **compatible**, namely that the number of columns in the first equals the number of rows in the second
-- If $ \mathbf{X} $ has order $ r \times c $ and $ \mathbf{Y} $ has order $ m \times n $ then $ \mathbf{XY} $ only exists if $ c = m $; then $ \mathbf{XY} $ has order $ r \times n $
-- The $ ij^{th} $ element of the product $ \mathbf{XY} $ is the **dot product** of the $ i^{th} $ row of $ \mathbf{X} $ and the $ j^{th} $ column of $ \mathbf{Y} $
+- If $\mathbf{X}$ has order $ r \times c$ and $\mathbf{Y}$ has order $m \times n$ then $\mathbf{XY}$ only exists if $ c = m $; then $\mathbf{XY}$ has order $r \times n$
+- The $ij^{th}$ element of the product $\mathbf{XY} $ is the **dot product** of the $i^{th}$ row of $\mathbf{X}$ and the $j^{th}$ column of $\mathbf{Y}$
 
 
 
