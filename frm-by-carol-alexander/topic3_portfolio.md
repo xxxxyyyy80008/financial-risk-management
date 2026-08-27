@@ -311,7 +311,7 @@ c\mathbf{X} = (cx_{ij})
 ### **Matrix Multiplication: Excel MMULT**
 
 - Matrices can be multiplied, but **only** if their dimensions are **compatible**, namely that the number of columns in the first equals the number of rows in the second
-- If $\mathbf{X}$ has order $ r \times c$ and $\mathbf{Y}$ has order $m \times n$ then $\mathbf{XY}$ only exists if $ c = m $; then $\mathbf{XY}$ has order $r \times n$
+- If $\mathbf{X}$ has order $r \times c$ and $\mathbf{Y}$ has order $m \times n$ then $\mathbf{XY}$ only exists if $c = m$; then $\mathbf{XY}$ has order $r \times n$
 - The $ij^{th}$ element of the product $\mathbf{XY} $ is the **dot product** of the $i^{th}$ row of $\mathbf{X}$ and the $j^{th}$ column of $\mathbf{Y}$
 
 
@@ -327,8 +327,8 @@ c\mathbf{X} = (cx_{ij})
 \begin{pmatrix} 19 & 62 & 31 & 6 \\ 47 & 124 & 62 & 27 \end{pmatrix}
 ```
 
-- For instance: $ 124 = 8 \times 8 + 9 \times 4 + 4 \times 6 $
-- Note that $ \mathbf{XY} \neq \mathbf{YX} $ except for some special matrices
+- For instance: $124 = 8 \times 8 + 9 \times 4 + 4 \times 6$
+- Note that $\mathbf{XY} \neq \mathbf{YX}$ except for some special matrices
 
 
 
@@ -336,16 +336,16 @@ c\mathbf{X} = (cx_{ij})
 
 ### **Definition of Quadratic Form**
 
-- Let $ \mathbf{A} $ be a square matrix of dimension $ n \times n $ and let $ \mathbf{x} $ be any $ n \times 1 $ vector
-- Then $ \mathbf{x}'\mathbf{A}\mathbf{x} $ is called a **quadratic form**
-- For instance, if $ \mathbf{A} = \begin{pmatrix} 1 & 2 \\ 3 & -1 \end{pmatrix} $ and $ \mathbf{x} = (x, y)' $ then
+- Let $\mathbf{A}$ be a square matrix of dimension $n \times n$ and let $\mathbf{x}$ be any $n \times 1$ vector
+- Then $\mathbf{x}'\mathbf{A}\mathbf{x}$ is called a **quadratic form**
+- For instance, if $\mathbf{A} = \begin{pmatrix} 1 & 2 \\ 3 & -1 \end{pmatrix}$ and $\mathbf{x} = (x, y)'$ then
 
 ```math
 \mathbf{x}'\mathbf{A}\mathbf{x} = x^2 + 5xy - y^2
 ```
 
-- So if, for instance, $ x = 1 $ and $ y = 2 $ then the value of the quadratic form is $ 1 + 10 - 4 = 7 $
-- A matrix $ \mathbf{A} $ is **positive definite** if (and only if) all quadratic forms are positive, for any (non-zero) value of $ \mathbf{x} $.
+- So if, for instance, $x = 1$ and $y = 2$ then the value of the quadratic form is $1 + 10 - 4 = 7$
+- A matrix $\mathbf{A}$ is **positive definite** if (and only if) all quadratic forms are positive, for any (non-zero) value of $\mathbf{x}$.
 
 
 ## 3.4. Statistical Operators
