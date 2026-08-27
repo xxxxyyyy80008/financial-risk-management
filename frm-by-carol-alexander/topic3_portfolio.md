@@ -30,7 +30,9 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 - When market risk is based on P&L it is expressed in the same units as the price, such as USD ($)
 
+**P&L Distribution at Risk Horizon**
 
+<img src="images/3_1.png" alt="" width="590" >
 
 **Two Kinds of Returns**
 
@@ -58,6 +60,7 @@ is between 2 and 3, so the graph of the exponential function $e^x$ lies between 
 
 The exponential function $e^x$ is also denoted $\exp(x)$
 
+<img src="images/3_2.png" alt="" width="590" >
 ---
 
 **Reminder 2**
@@ -68,6 +71,7 @@ $$\ln(e^x) = x \quad \text{and} \quad e^{\ln x} = x$$
 
 and the graph of $\ln x$ is the reflection of $y = e^x$ in the line $y = x$
 
+<img src="images/3_3.png" alt="" width="590" >
 
 ---
 
@@ -123,26 +127,21 @@ $$\ln(1 + R_t) \approx R_t$$
 
 ### **Forward-Looking Returns and P&L are Random Variables**
 
-- Two side-by-side graphs showing normal distributions:
-  - **Left Graph:** Return (%) vs Density — peak near 0%, spread from –6% to +6%
-  - **Right Graph:** P&L ($m) vs Density — peak near 0, spread from –1.5 to +1.5 million dollars
-- Both curves are bell-shaped and symmetric.
-- Caption: “We often assume that portfolio returns are normally distributed”
+<img src="images/3_4.png" alt="" width="590" >
+
+We often assume that portfolio returns are normally distributed
 
 ---
 
 ### **Reminder of Normal Distributions**
 
-- Graph titled “Reminder of Normal Distributions”
-- Shows standard normal bell curve with mean = 0, standard deviation = 1.
+<img src="images/3_5.png" alt="" width="590" >
+
 - Percentages within standard deviations:
   - 68.2% of values lie between –1 SD and +1 SD
   - 95.4% of values lie between –2 SD and +2 SD
   - 99.7% of values lie between –3 SD and +3 SD
-- Labeled regions:
-  - Mean Value at center (0)
-  - ±1 SD, ±2 SD, ±3 SD marked on x-axis
-  - Tail probabilities: 2.1% beyond ±3 SD, 13.6% between ±2 and ±3 SD, etc.
+
 - Source: Investopedia
 
 
@@ -163,17 +162,7 @@ $$\ln(1 + R_t) \approx R_t$$
 
 - $Z \sim N(0,1)$ is the standard normal variable
 
-**Left Graph: Density Function (PDF)**  
-- Title: $\phi =$ density function (pdf)  
-- Bell-shaped curve centered at 0.
-- Vertical line at $z_\alpha$; shaded area under curve to the left labeled “Area = 0.841345”
-- Formula: $\phi(z) = \frac{1}{\sqrt{2\pi}} \exp(-0.5z^2)$
-
-**Right Graph: Distribution Function (CDF)**  
-- Title: $\Phi =$ distribution function (cdf)  
-- S-shaped curve from 0 to 1.
-- Vertical line at $z_\alpha$; horizontal line to y-axis indicates cumulative probability.
-- Note: Values of $\Phi(z)$ are given in statistical tables.
+<img src="images/3_6.png" alt="" width="590" >
 
 ---
 
@@ -183,10 +172,9 @@ $$\ln(1 + R_t) \approx R_t$$
 - `= NORMSINV(α)` gives a quantile $z_\alpha$ such that $P(Z < z_\alpha) = \alpha$
 - e.g. `NORMSDIST(0.15)=0.56` and `NORMSINV(0.56)=0.15`
 
-**Graph:**  
-Title: $\Phi$ distribution function  
-- Shows the cumulative distribution function (CDF) curve of the standard normal distribution.
-- Horizontal line at $y=0.56$ intersects the curve; vertical drop to x-axis shows corresponding quantile (~0.15).
+$\Phi$ distribution function 
+
+<img src="images/3_7.png" alt="" width="390" >
 
 ---
 
