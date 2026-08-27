@@ -307,17 +307,8 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 ### ** Example**
 
-<img src="images/2_11.png" alt="" width="550" >
-- **Diagram:**
-    - **Company:**
-        - Pays LIBOR + 1% to Bank A
-        - Receives LIBOR from Bank B
-        - Pays 7% to Bank B
-    - **Bank A:**
-        - Receives LIBOR + 1% from Company
-    - **Bank B:**
-        - Pays LIBOR to Company
-        - Receives 7% from Company
+<img src="images/2_11.png" alt="" width="380" >
+
 - A company gets an 8-year loan for $1m from bank A on which it pays interest of reference rate + 1% per annum
 - The company enters an 8-year IRS with bank B, with notional $1m, to receive reference rate and pay the swap rate of 7% per annum
 - By matching the maturity of the swap with the loan, and equating their notional amounts this company is now effectively paying 8% fixed interest for 8 years
@@ -388,7 +379,7 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
     - Left: Timeline showing protection buyer making payments to protection seller from $t_0$ to $t_n$.
     - Right: Timeline showing protection buyer making payments to protection seller from $t_0$ to $t_5$, then protection seller compensating protection buyer after a credit default event at $t_5$.
 
-
+<img src="images/2_12.png" alt="" width="280" >
 
 ### **Naked Credit Default Swaps**
 
@@ -425,16 +416,8 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 ### ** Illustration of a Collateralised Loan Obligation**
 
 <img src="images/2_13.png" alt="" width="550" >
-- **Diagram:**
-    - **Left Arrow (Green):** Claims on Cash Flow, Decreasing by Collateral
-    - **Middle Bar (CLO Debt issued in tranches):**
-        - AAA Tranche (Top)
-        - AA Tranche
-        - A Tranche
-        - BBB Tranche
-        - BA Tranche
-        - Equity (Bottom)
-    - **Right Arrow (Orange):** Losses, Increasing Credit Risk
+
+
 - The equity tranche is the first group to lose payment from defaults, so these investors receive the highest coupons – the AAA tranche is the last to lose payments, so they get the lowest coupons
 
 
