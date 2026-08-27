@@ -136,13 +136,12 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 ### **BoE Spot Curve Evolution**
 
-*(Chart description)*  
-A line chart titled “BoE Spot Curve Evolution” plotting interest rate (%) vs. Date (2016–2025). Five lines represent spot rates at different maturities: 1 yr (red), 5 yr (blue), 10 yr (gray), 15 yr (green), 20 yr (dark gray), and 25 yr (yellow/orange). Rates generally rise sharply after 2021, peaking around 2023–2024, with some divergence among maturities.
+<img src="images/5_1.png" alt="" width="590" >
 
 **Caption:**  
 We use the rates for **0.5, 1, 1.5, ..., 25 years** as vertices for measuring normal and historical VaR, for a cash-flow portfolio of long and short UK government bonds, called **Gilts**, on 30 Sept 2024
 
-<img src="images/5_1.png" alt="" width="550" >
+
 
 ---
 
