@@ -125,8 +125,9 @@ Original resource: [youtube](https://www.youtube.com/watch?v=mXC5yJ5MKwM&list=PL
 
 - And $\text{VaR}_{h,\alpha} = \sqrt{h} \, \text{VaR}_{1,\alpha}$
 
-$\text{VaR}_{h,\alpha} = \sqrt{h} \, \text{VaR}_{1,\alpha}$
-
+```math
+\text{VaR}_{h,\alpha} = \sqrt{h} \, \text{VaR}_{1,\alpha}
+```
 ## 5.4 Example: VaR for a Gilts Portfolio
 
 ---
